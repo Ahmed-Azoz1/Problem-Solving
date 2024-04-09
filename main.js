@@ -15,3 +15,10 @@ function sum (numbers) {
     }
     return initValue
 };
+
+
+// 3-Sum without highest and lowest number
+function sumArray(array) {
+    if(array === null) return 0;
+    return array.sort((min,max)=> min - max).slice(1,-1).reduce((acc,curr)=>acc + curr,0)
+}
