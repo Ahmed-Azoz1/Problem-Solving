@@ -40,3 +40,10 @@ function repeatStr (n, s) {
 function numberToString(num) {
     return num.toString()
 }
+
+// 6-Convert a String to a Number!
+const stringToNumber = function(str){
+    return parseInt(str)
+    // or
+    // return Number(str);
+}
