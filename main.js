@@ -19,6 +19,16 @@ function sum (numbers) {
 
 // 3-Sum without highest and lowest number
 function sumArray(array) {
-    if(array === null) return 0;
-    return array.sort((min,max)=> min - max).slice(1,-1).reduce((acc,curr)=>acc + curr,0)
+    if(!array || array.length < 0) return 0;
+    return array.sort((min,max)=> min - max).slice(1,-1).reduce((acc,curr)=>acc + curr,0);
+}
+
+
+// 4-String repeat
+function repeatStr (n, s) {
+    let string = '';
+    for(let i=0;i<n;i++){
+        string += s;
+    }
+    return string;
 }
