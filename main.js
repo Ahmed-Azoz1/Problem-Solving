@@ -31,4 +31,12 @@ function repeatStr (n, s) {
         string += s;
     }
     return string;
+
+    // Or
+    // return s.repeat(n)
+}
+
+// 5-Convert a Number to a String!
+function numberToString(num) {
+    return num.toString()
 }
