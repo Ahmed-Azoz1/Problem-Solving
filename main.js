@@ -61,3 +61,15 @@ function century(year) {
     //   or
     // return Math.ceil(year / 100);
 }
+
+// 8-Sentence Smash
+function smash (words) {
+    return words.join(' ')
+
+    // or
+    // let res = '';
+    // for (let i of words) {
+    //     res += i.concat(' ')
+    // }
+    // return res.trim();   
+};
