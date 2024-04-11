@@ -47,3 +47,17 @@ const stringToNumber = function(str){
     // or
     // return Number(str);
 }
+
+// 7-Century From Year
+function century(year) {
+    let result = 0;
+    for (let i = 0; i < year; i++) {
+    if (i % 100 === 0) {
+        result++;
+        }
+    }
+    return result;
+    
+    //   or
+    // return Math.ceil(year / 100);
+}
