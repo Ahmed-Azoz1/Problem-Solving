@@ -105,4 +105,28 @@ const rps = (p1, p2) => {
 function cockroachSpeed(s) {
     //Good Luck!
     return Math.floor(s * 1000 * 100 / (60 * 60))
+    // or
+    // return Math.floor(s*1000/36);
+}
+
+
+// 11-Fundamentals: Return
+function add(a,b){
+    return a +b
+}
+function divide(a,b){
+    return a/b
+}
+function multiply(a,b){
+    return a*b
+}
+function mod(a,b){
+    return a%b
+}
+function exponent(a,b){
+    return a**b
+}
+    
+function subt(a,b){
+    return a-b
 }
