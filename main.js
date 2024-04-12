@@ -99,3 +99,10 @@ const rps = (p1, p2) => {
     //     return "Player 2 won!";
     // }
 };
+
+
+// 10-Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+    //Good Luck!
+    return Math.floor(s * 1000 * 100 / (60 * 60))
+}
