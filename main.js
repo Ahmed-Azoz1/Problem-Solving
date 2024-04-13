@@ -168,3 +168,15 @@ function removeExclamationMarks(s) {
     // or
     // return s.split('!').join('');
 }
+
+
+// 15-Invert values
+function invert(array) {
+    return array.map(num=>num * -1);
+    // or
+    // let newArr = [];
+    // for(let i = 0; i < array.length; i++){
+    //     newArr.push(-array[i]);
+    // }
+    // return newArr;
+}
