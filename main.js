@@ -161,3 +161,10 @@ function replace(s){
     // }
     // return newS
 }
+
+// 14-Remove exclamation marks
+function removeExclamationMarks(s) {
+    return s.replace(/!/g,'')
+    // or
+    // return s.split('!').join('');
+}
