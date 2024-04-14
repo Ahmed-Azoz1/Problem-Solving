@@ -193,3 +193,16 @@ function strCount(str, letter){
     // or
     // return str.split('').filter(c => c == letter).length;
 }
+
+// 17-Find out whether the shape is a cube
+function cubeChecker(volume, side){
+    if (side<=0 || volume<=0){
+        return false;
+    }else if(Math.pow(side,3)!==volume){
+        return false;
+    }else{
+        return true;
+    }
+    // or
+    // return volume /side ** 2 == side && side > 0
+};
