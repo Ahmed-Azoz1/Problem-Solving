@@ -226,3 +226,18 @@ function switchItUp(number){
     // or
     // return 'Zero One Two Three Four Five Six Seven Eight Nine'.split(' ')[number];
 }
+
+// 19-Flick Switch
+function flickSwitch(arr){
+    let flag = true;
+    return arr.map(item => item === 'flick' ? flag =!flag : flag);
+    // or
+    // let flag = true
+    // for(let i = 0; i < arr.length; i++){
+    //     if(arr[i] == 'flick'){
+    //     flag == false ? flag = true : flag = false
+    //     } 
+    //     arr[i] = flag
+    // }
+    // return arr
+}
