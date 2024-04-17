@@ -241,3 +241,25 @@ function flickSwitch(arr){
     // }
     // return arr
 }
+
+// 20-Total amount of points
+function points(games) {
+    let gamer = games.map((game)=>{
+        const [x,y] = game.split(":").map(n=>parseInt(n))
+        if(x>y) return 3;
+        if(x<y) return 0;
+        return 1;
+    })
+    let points = gamer.reduce((total,current)=> total +current)
+    return points
+    // or
+    // let sum=0;
+    // for (let i=0; i<games.length; ++i)
+    // {
+    //     if (games[i][0]>games[i][2])
+    //     sum+=3;
+    //     if (games[i][0]==games[i][2])
+    //     sum+=1;
+    // }
+    // return sum;
+}
