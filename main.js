@@ -262,4 +262,30 @@ function points(games) {
     //     sum+=1;
     // }
     // return sum;
+    // or
+    // let total = 0;
+    // for (let i = 0; i < games.length; i++) {
+    //     [x, y] = games[i].split(":");
+    //     if (x > y) {
+    //     total += 3;
+    //     } else if (x === y) {
+    //         total += 1;
+    //     }
+    // }
+    // return total;
+}
+
+// 21-Collinearity
+function collinearity( x1,y1, x2,y2 ) {
+    return (x1*y2)==(y1*x2) ;
+    // or
+    // if ((x1 == 0 && x2 == 0) || (y1 == 0 && y2 == 0)) {
+    //     return true;
+    // } else if ((x1 == 0 && y1 == 0) || (x2 == 0 && y2 == 0)) {
+    //     return true;
+    // } else if ((x1 / x2 == y1 / y2) && (x1 != 0 && x2 != 0 && y1 != 0 && y2 != 0 )) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
 }
