@@ -289,3 +289,17 @@ function collinearity( x1,y1, x2,y2 ) {
     //     return false;
     // }
 }
+
+// 22-Well of Ideas - Easy Version
+function well(x){
+    let count = 0;
+    for(let number of x){
+        if(number === 'good') count +=1;
+    }
+    if(count > 2) return 'I smell a series!';
+    if(count > 0) return 'Publish!';
+    return 'Fail!';
+    // or
+    // let count = x.reduce((s, v) => s + (v == 'good'), 0);
+    // return count ? count > 2 ? 'I smell a series!' : 'Publish!' : 'Fail!';
+}
