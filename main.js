@@ -303,3 +303,11 @@ function well(x){
     // let count = x.reduce((s, v) => s + (v == 'good'), 0);
     // return count ? count > 2 ? 'I smell a series!' : 'Publish!' : 'Fail!';
 }
+
+// 23-Count Odd Numbers below n
+function oddCount(n){
+    if(n%2===0) return n/2;
+    return Math.floor(n/2)
+    // or
+    // return parseInt(n/2);
+}
