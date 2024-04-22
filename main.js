@@ -311,3 +311,14 @@ function oddCount(n){
     // or
     // return parseInt(n/2);
 }
+
+// 24-Powers of 2
+function powersOfTwo(n){
+    let arr = [];
+    for(let i=0;i<=n;i++){
+        arr.push(Math.pow(2,i))
+    }
+    return arr;
+    // or
+    // return [...Array(n + 1)].map((_, i) => 2 ** i)
+}
