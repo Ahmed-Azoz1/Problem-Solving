@@ -322,3 +322,31 @@ function powersOfTwo(n){
     // or
     // return [...Array(n + 1)].map((_, i) => 2 ** i)
 }
+
+
+// 25-Simple Fun #352: Reagent Formula
+function isValid(formula){
+    if(formula.includes(1) && formula.includes(2)) {
+        return false;
+    }
+    else if(formula.includes(3) && formula.includes(4)) {
+        return false;
+    }
+    else if(formula.includes(5) != formula.includes(6)) {
+        return false;
+    }
+    else if(formula.includes(7) || formula.includes(8)) {
+        return true; 
+    } 
+    else {
+        return false;
+    }
+
+    // or
+    // return (
+    //     !(formula.includes(1) && formula.includes(2)) &&
+    //     !(formula.includes(3) && formula.includes(4)) &&
+    //     (formula.includes(5) === formula.includes(6)) &&
+    //     (formula.includes(7) || formula.includes(8))
+    // )
+}
