@@ -350,3 +350,10 @@ function isValid(formula){
     //     (formula.includes(7) || formula.includes(8))
     // )
 }
+
+// 26-Grasshopper - Combine strings
+const combineNames = (first,last)=>{
+    return `${first} ${last}`
+    // or
+    // return first + " " + last
+}
