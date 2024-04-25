@@ -357,3 +357,16 @@ const combineNames = (first,last)=>{
     // or
     // return first + " " + last
 }
+
+// 27-Pillars
+function pillars(numPill, dist, width) {
+    return numPill > 1 ? (numPill - 2) * width + (numPill - 1) * dist * 100 : 0
+    // or 
+    // if (numPill === 1) {
+    //     return 0;
+    // }else{
+    //     let distance = dist * ((numPill -1) * 100 );
+    //     let pillars = numPill - 2;
+    //     return distance + (width * pillars);
+    // }
+}
