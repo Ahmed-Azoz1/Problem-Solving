@@ -370,3 +370,14 @@ function pillars(numPill, dist, width) {
     //     return distance + (width * pillars);
     // }
 }
+
+// 28-CSV representation of array
+function toCsvText(array) {
+    return comma = array.map((row)=>row.join(",")).join('\n')
+    // or
+    // let res = '';
+    // for (let i = 0; i < array.length; i++) {
+    //     res += array[i] + '\n'
+    // }
+    // return res.trim();
+}
