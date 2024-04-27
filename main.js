@@ -381,3 +381,11 @@ function toCsvText(array) {
     // }
     // return res.trim();
 }
+
+// 29-Count Odd Numbers below n
+function oddCount(n){
+    if(n%2===0)return n/2;
+    return Math.floor(n/2)
+    // or
+    // return (n-n%2)/2
+}
