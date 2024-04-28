@@ -389,3 +389,20 @@ function oddCount(n){
     // or
     // return (n-n%2)/2
 }
+
+// 30-Count of positives / sum of negatives
+function countPositivesSumNegatives(input) {
+    if(input === null || input.filter(n=>n!=0).length ==0){
+        return []
+    }else{
+        let positives = 0;
+        let sum = 0;
+        for(let n of input){
+            if(n < 0) sum += n;
+            if(n > 0) positives +=1;
+        }
+        return [positives,sum]
+    }
+    // or
+    // return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
+}
