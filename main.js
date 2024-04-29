@@ -406,3 +406,14 @@ function countPositivesSumNegatives(input) {
     // or
     // return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
 }
+
+// 31-Count the Monkeys!
+function monkeyCount(n) {
+    return Array.from({length:n},(_,index)=>index+1)
+    // or
+    // let monkeys = [];
+    // for(let i=1; i<n+1; i++){
+    // monkeys.push(i);
+    // }
+    // return monkeys;
+}
