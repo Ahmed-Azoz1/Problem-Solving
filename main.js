@@ -447,3 +447,14 @@ function changeMe(moneyIn){
     //         return moneyIn;
     // }
 }
+
+// 33-Reversed Strings
+function solution(str){
+    return str.split("").reverse().join("");
+    // or
+    // let reversedStr =[]
+    // for(let x =0 ; x <= str.length; x++) {
+    //     reversedStr.push(str[str.length - x])
+    // } 
+    // return reversedStr.join("");
+}
