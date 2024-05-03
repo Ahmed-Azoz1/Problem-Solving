@@ -458,3 +458,14 @@ function solution(str){
     // } 
     // return reversedStr.join("");
 }
+
+// 34-My head is at the wrong end!
+function fixTheMeerkat(arr) {
+    return arr.reverse()
+    // or
+    // let nArr = [];
+    // for(let i = arr.length-1; i >= 0; i--){
+    //     nArr.push(arr[i]) 
+    // }
+    // return nArr;
+}
