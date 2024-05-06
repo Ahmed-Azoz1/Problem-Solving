@@ -493,3 +493,14 @@ function yearDays(year) {
     //     return `${year} has 366 days`;
     // }
 }
+
+// 37-Square(n) Sum
+function squareSum(numbers){
+    return numbers.map((num)=>num *num).reduce((total,num)=>total + num,0)
+    // or
+    // let result = 0;
+    // for (let i = 0; i < numbers.length; i++) {
+    //     result += (numbers[i] * numbers[i]);
+    // }
+    // return result;
+}
