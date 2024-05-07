@@ -504,3 +504,12 @@ function squareSum(numbers){
     // }
     // return result;
 }
+
+// 38-Sum The Strings
+function sumStr(a,b) {
+    if(a === '') a = '0';
+    if(b === '') b = '0';
+    return `${Number(a) + Number(b)}`
+    // or
+    // return String(Number(a)+Number(b));
+}
