@@ -513,3 +513,12 @@ function sumStr(a,b) {
     // or
     // return String(Number(a)+Number(b));
 }
+
+// 39-Find the Difference in Age between Oldest and Youngest Family Members
+function differenceInAges(ages){
+    return [Math.min(...ages),Math.max(...ages),Math.max(...ages)-Math.min(...ages)]
+    // or
+    // let min = Math.min(...ages);
+    // let max = Math.max(...ages);
+    // return [min, max, max-min];
+}
