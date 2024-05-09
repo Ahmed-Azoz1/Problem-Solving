@@ -522,3 +522,14 @@ function differenceInAges(ages){
     // let max = Math.max(...ages);
     // return [min, max, max-min];
 }
+
+// 40-Multiply the number
+function multiply(number){
+    return number * 5 ** String(Math.abs(number)).length
+    // or
+    // let power = number.toString().length;
+    // if(number < 0){
+    //     power -= 1;
+    // }
+    // return number * (5 ** power);
+}
