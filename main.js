@@ -533,3 +533,14 @@ function multiply(number){
     // }
     // return number * (5 ** power);
 }
+
+// 41-Beginner - Reduce but Grow
+function grow(x){
+    return x.reduce((cur,total)=>cur*total)
+    // or
+    // let res = 1;
+    // for (let i = 0; i < x.length; i++) {
+    //     res *= x[i];
+    // }
+    // return res;
+}
