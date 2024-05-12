@@ -552,3 +552,15 @@ function paperwork(n, m) {
     // or
     // return n < 0 || m < 0 ? 0 : n * m;
 }
+
+// 43-Array plus array
+function arrayPlusArray(arr1, arr2) {
+    return arr1.reduce((cur,total)=>cur+ total) + arr2.reduce((cur,total)=>cur+ total)
+    // or
+    // let sum=0;
+    // for(let i=0;i<arr1.length;i++)
+    //     sum+=arr1[i];
+    // for(let i=0;i<arr2.length;i++)
+    //     sum+=arr2[i];
+    // return sum;
+}
