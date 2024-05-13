@@ -564,3 +564,14 @@ function arrayPlusArray(arr1, arr2) {
     //     sum+=arr2[i];
     // return sum;
 }
+
+// 44-Draw stairs
+function drawStairs(n) {
+    let result = [];
+    for (let i = 0; i < n; i++) {
+        result[i] = `${' '.repeat(i)}I`;
+    }
+    return result.join('\n');
+    // or
+    // return [...Array(n)].map((_,index)=>' '.repeat(index) + 'I').join('\n')
+}
