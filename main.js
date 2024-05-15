@@ -597,3 +597,26 @@ function basicOp(operation, value1, value2){
     //     case '/': return value1 / value2;
     // }
 }
+
+// 46-I love you, a little , a lot, passionately ... not at all
+function howMuchILoveYou(nbPetals) {
+    let p = ["I love you","a little","a lot","passionately","madly","not at all"]
+    let index = nbPetals % 6 -1;
+    index === -1 ? index = p.length - 1:null;
+    return p[index]
+    // or
+    // switch ((nbPetals - 1) % 6) {
+    //     case 1:
+    //         return "a little";
+    //     case 2:
+    //         return "a lot";
+    //     case 3:
+    //         return "passionately";
+    //     case 4:
+    //         return "madly";
+    //     case 5:
+    //         return "not at all";
+    //     default:
+    //         return "I love you";
+    // }
+}
