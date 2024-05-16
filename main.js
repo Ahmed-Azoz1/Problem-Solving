@@ -620,3 +620,17 @@ function howMuchILoveYou(nbPetals) {
     //         return "I love you";
     // }
 }
+
+
+// 47-Counting sheep...
+function countSheeps(sheep) {
+    return sheep.filter(one=>!!one).length;
+    // or
+    // let num = 0;
+    // for(let i = 0; i < arrayOfSheep.length; i++) {
+    //     if(arrayOfSheep[i]) {
+    //         num += 1;
+    //     }
+    // }
+    // return num;
+}
