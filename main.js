@@ -634,3 +634,16 @@ function countSheeps(sheep) {
     // }
     // return num;
 }
+
+// 48-Find numbers which are divisible by given number
+function divisibleBy(numbers, divisor){
+    return numbers.filter(num=>num % divisor === 0)
+    // or
+    // let newArr = [];
+	// for (let i = 0; i < numbers.length; i++) {
+	// 	if (numbers[i] % divisor === 0) {
+	// 		newArr.push(numbers[i]);
+	// 	} 
+	// }
+    // return newArr;
+}
