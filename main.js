@@ -647,3 +647,14 @@ function divisibleBy(numbers, divisor){
 	// }
     // return newArr;
 }
+
+// 49-Is the string uppercase?
+String.prototype.isUpperCase = function() {
+    return this == this.toUpperCase();
+    // or
+    // if(this.toString() == this.toUpperCase()){
+    //     return true;
+    // } else{
+    //     return false;
+    // }
+}
