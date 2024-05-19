@@ -658,3 +658,10 @@ String.prototype.isUpperCase = function() {
     //     return false;
     // }
 }
+
+// 50-Chuck Norris VII - True or False? (Beginner)
+function ifChuckSaysSo(){
+    return ![]
+    // or
+    // return !true;
+}
