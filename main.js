@@ -665,3 +665,12 @@ function ifChuckSaysSo(){
     // or
     // return !true;
 }
+
+// 51-The Feast of Many Beasts
+function feast(beast, dish) {
+    return beast[0] == dish[0] && beast[beast.length -1] == dish[dish.length -1];
+    // or
+    // if (beast[0] == dish[0] && beast[beast.length - 1] == dish[dish.length - 1]) {
+    //     return true;
+    // }else {return false;}
+}
