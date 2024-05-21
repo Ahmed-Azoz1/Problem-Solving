@@ -674,3 +674,15 @@ function feast(beast, dish) {
     //     return true;
     // }else {return false;}
 }
+
+// 52-Count the number of cubes with paint on
+function countSquares(cuts){
+    return cuts == 0 ? 1 :6 * cuts * cuts + 2;
+    // or
+    // if(cuts===0){
+    //     return 1
+    // }
+    // let innerCube = Math.pow(cuts-1,3)
+    // let outerCube = Math.pow(cuts+1,3)
+    // return outerCube-innerCube
+}
