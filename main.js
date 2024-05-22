@@ -686,3 +686,21 @@ function countSquares(cuts){
     // let outerCube = Math.pow(cuts+1,3)
     // return outerCube-innerCube
 }
+
+// 53-Gravity Flip
+const flip=(d, a)=>{
+    if(d==='R'){
+        return a.sort((a,b)=> a-b )
+    }
+    return a.sort((a,b)=>b-a)
+    // or
+    // switch(d){
+    //     case 'R':
+    //     return a.sort((a,b) => a-b)
+    //     break;
+    //     case 'L':
+    //         return a.sort((a,b) => b-a)  
+    //     break;
+    // }
+    // return 
+}
