@@ -704,3 +704,15 @@ const flip=(d, a)=>{
     // }
     // return 
 }
+
+
+// 54-If you can't sleep, just count sheep!!
+const countSheep = function (num){
+    return [...Array(num)].map((v,i) => i + 1 + ' sheep...').join('')
+    // or
+    // let sheepString = '';
+    // for(let i=1;i<=num;i++){
+    //     sheepString += i.toString() + ' sheep...'
+    // }
+    // return sheepString;
+}
