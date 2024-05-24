@@ -716,3 +716,10 @@ const countSheep = function (num){
     // }
     // return sheepString;
 }
+
+// 55-Find the smallest integer in the array
+function findSmallestInt(arr) { 
+    return Math.min(...arr)
+    // or
+    // return args.sort((a,b)=>a-b)[0];
+}
