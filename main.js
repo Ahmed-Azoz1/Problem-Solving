@@ -723,3 +723,15 @@ function findSmallestInt(arr) {
     // or
     // return args.sort((a,b)=>a-b)[0];
 }
+
+// 56-Get the mean of an array
+function getAverage(marks){
+    let sum = marks.reduce((total,mark)=>total + mark,0)
+    return Math.floor(sum / marks.length)
+    // or
+    // let mark = 0;
+    // for(let i = 0; i < marks.length; i++){
+    //     mark += marks[i];
+    // }
+    // return Math.floor(mark / marks.length);
+}
