@@ -735,3 +735,11 @@ function getAverage(marks){
     // }
     // return Math.floor(mark / marks.length);
 }
+
+// 57-Return Negative
+function makeNegative(num) {
+    return num >= 0 ? -num : num;
+    // or
+    // if(num <= 0) return num;
+    // return num * -1;
+}
