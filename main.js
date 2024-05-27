@@ -743,3 +743,11 @@ function makeNegative(num) {
     // if(num <= 0) return num;
     // return num * -1;
 }
+
+// 58-Abbreviate a Two Word Name
+function abbrevName(name){
+    return name.toUpperCase().split(' ').map(char=>char[0]).join('.');
+    // or
+    // name = name.toUpperCase().split(' ');
+    // return name[0][0] + '.' + name[1][0];
+}
