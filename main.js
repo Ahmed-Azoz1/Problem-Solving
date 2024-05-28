@@ -751,3 +751,13 @@ function abbrevName(name){
     // name = name.toUpperCase().split(' ');
     // return name[0][0] + '.' + name[1][0];
 }
+
+// 59-Multiply
+function multiply(a, b){
+    return a * b
+    // or
+    // if (!a || !b || typeof(a) != "number" || typeof(b) != "number") {
+    //     return 0;
+    // }
+    // return a * b;
+}
