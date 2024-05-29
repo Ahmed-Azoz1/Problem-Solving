@@ -761,3 +761,13 @@ function multiply(a, b){
     // }
     // return a * b;
 }
+
+
+// 60-Calculate average
+function findAverage(array) {
+    if(array.length === 0) return 0;
+    let sum = array.reduce((sum,num)=>sum +num,0)
+    return sum / array.length;
+    // or
+    // return array.length === 0 ? 0 : array.reduce((sum, num)=> sum + num, 0)/array.length;
+}
