@@ -771,3 +771,10 @@ function findAverage(array) {
     // or
     // return array.length === 0 ? 0 : array.reduce((sum, num)=> sum + num, 0)/array.length;
 }
+
+// 61-Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+    return arr1.filter((item) => !arr2.includes(item)).concat(arr2).sort((num1, num2) => num1 - num2)
+    // or
+    // return Array.from(new Set(arr1.concat(arr2).sort((num1,num2)=>num1 - num2))) 
+}
