@@ -778,3 +778,10 @@ function mergeArrays(arr1, arr2) {
     // or
     // return Array.from(new Set(arr1.concat(arr2).sort((num1,num2)=>num1 - num2))) 
 }
+
+// 62-Find Nearest square number
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)),2)
+    //or
+    // return Math.round(n**0.5)**2;
+}
