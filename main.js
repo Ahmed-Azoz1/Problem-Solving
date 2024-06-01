@@ -785,3 +785,14 @@ function nearestSq(n){
     //or
     // return Math.round(n**0.5)**2;
 }
+
+// 63-Sum Mixed Array
+function sumMix(x){
+    return x.map(num=>parseInt(num)).reduce((total,current)=>total + current,0)
+    // or
+    // let result = 0;
+    // for (let n of x) {
+    //     result += parseInt(n);
+    // }
+    // return result;
+}
