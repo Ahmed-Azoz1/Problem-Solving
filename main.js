@@ -796,3 +796,11 @@ function sumMix(x){
     // }
     // return result;
 }
+
+// 64-DNA to RNA Conversion
+function DNAtoRNA(dna) {
+    return dna.replaceAll('T','U');
+    // or
+    // return dna.replace(/T/g,'U');
+
+}
