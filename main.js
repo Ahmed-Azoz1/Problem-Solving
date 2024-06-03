@@ -802,5 +802,19 @@ function DNAtoRNA(dna) {
     return dna.replaceAll('T','U');
     // or
     // return dna.replace(/T/g,'U');
+}
 
+// 65-Fake Binary
+function fakeBin(x){
+    return x.split('').map(char => char < 5 ? 0 : 1).join('');
+    // or
+    // let bin = '';
+    // for(let char of x){
+    //     if(parseInt(char) <5){
+    //     bin +='0';
+    //     }else{
+    //     bin += '1';
+    //     }
+    // }
+    // return bin ;
 }
