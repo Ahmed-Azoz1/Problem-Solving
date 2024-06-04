@@ -818,3 +818,14 @@ function fakeBin(x){
     // }
     // return bin ;
 }
+
+// 66-Grasshopper - Summation
+var summation = function (num) {
+    return num * (1+num) / 2;
+    // or
+    // let sum = 0;
+    // for(let i=0; i<=num;i++){
+    //     sum+=i
+    // }
+    // return sum;
+}
