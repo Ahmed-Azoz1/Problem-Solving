@@ -829,3 +829,15 @@ var summation = function (num) {
     // }
     // return sum;
 }
+
+// 67-Circular Objects #1 - Running around in circles
+let circular = {value:'Hello World'}
+circular.self = circular
+// or
+// class Circular {
+//     constructor() {
+//         this.value = "Hello World";
+//         this.self = this;
+//     }
+// }
+// circular = new Circular();
