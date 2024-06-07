@@ -852,3 +852,15 @@ function rentalCarCost(d) {
     // or
     // return d * 40 - (d >= 7 ? 50 : (d >= 3 ? 20 : 0));
 }
+
+
+// 69-Pirates!! Are the Cannons ready!??
+const cannonsReady = (gunners) => {
+    return Object.values(gunners).includes('nay') ? 'Shiver me timbers!' : 'Fire!'; 
+    // or
+    // for(name in gunners)
+    //     if(gunners[name] === 'nay'){
+    //         return 'Shiver me timbers!'
+    //     }
+    // return 'Fire!'
+}
