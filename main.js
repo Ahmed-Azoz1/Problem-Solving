@@ -864,3 +864,16 @@ const cannonsReady = (gunners) => {
     //     }
     // return 'Fire!'
 }
+
+// 70-Sum of positive
+function positiveSum(arr) {
+    return arr.filter(num=>num > 0).reduce((total,current)=>total + current,0)
+    // or
+    // let sum = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] > 0) {
+    //     sum += arr[i];
+    //     }
+    // }
+    // return sum;
+}
