@@ -877,3 +877,14 @@ function positiveSum(arr) {
     // }
     // return sum;
 }
+
+// 71-Count by X
+function countBy(x, n) {
+    let z = [];
+    for(let i=1;i <= n;i++){
+        z.push(x * i);
+    }
+    return z;
+    // or
+    // return Array.from({length: n}, (v, i) => (i + 1) * x);
+}
