@@ -888,3 +888,23 @@ function countBy(x, n) {
     // or
     // return Array.from({length: n}, (v, i) => (i + 1) * x);
 }
+
+// 72-Correct the mistakes of the character recognition software
+function correct(string)
+{
+	let newString='';
+    for(let char of string){
+        if(char === '5'){
+            newString += 'S';
+        }else if(char === '1'){
+            newString += 'I';
+        }else if(char === '0'){
+            newString += 'O'
+        }else{
+            newString += char;
+        }
+    }
+    return newString;
+    // or
+    // return string.replace(/0/g, "O").replace(/5/g, "S").replace(/1/g, "I");
+}
