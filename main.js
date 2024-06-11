@@ -908,3 +908,16 @@ function correct(string)
     // or
     // return string.replace(/0/g, "O").replace(/5/g, "S").replace(/1/g, "I");
 }
+
+// 73-Is this my tail?
+function correctTail(bod, tail){
+    return bod[bod.length - 1] == tail;
+    // or
+    // let sub = bod.substr(bod.length-(tail.length));
+    // if (sub === tail) {
+    //     return true;
+    // }
+    // else {
+    //     return false;
+    // }
+}
