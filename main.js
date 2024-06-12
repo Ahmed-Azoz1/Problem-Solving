@@ -921,3 +921,13 @@ function correctTail(bod, tail){
     //     return false;
     // }
 }
+
+// 74-Removing Elements
+function removeEveryOther(arr){
+    return arr.filter((_,index)=>index % 2==0);
+    // or
+    // for (let i = 1; i < arr.length;i++){
+    //     arr.splice(i,1);
+    // }
+    // return arr;
+}
