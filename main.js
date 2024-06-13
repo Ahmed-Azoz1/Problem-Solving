@@ -931,3 +931,16 @@ function removeEveryOther(arr){
     // }
     // return arr;
 }
+
+// 75-Enumerable Magic #1 - True for All?
+function all( arr, fun ){
+    return arr.every(fun);
+    // or
+    // let length = arr.length;
+    // for (let i=0; i<length; ++i){
+    //     if (!fun(arr[i])){
+    //         return false;
+    //     }
+    // }
+    // return true;
+}
