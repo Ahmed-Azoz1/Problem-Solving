@@ -944,3 +944,14 @@ function all( arr, fun ){
     // }
     // return true;
 }
+
+// 76-Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return mpg * fuelLeft >= distanceToPump;
+    // or
+    // if (distanceToPump <= mpg * fuelLeft){
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+};
