@@ -955,3 +955,10 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     //     return false;
     // }
 };
+
+// 77-get character from ASCII Value
+function getChar(c){
+    return String.fromCharCode(c);
+    // or
+    // return eval('"\\'+ c.toString(8) +'"')
+}
