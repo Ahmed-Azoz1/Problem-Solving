@@ -962,3 +962,11 @@ function getChar(c){
     // or
     // return eval('"\\'+ c.toString(8) +'"')
 }
+
+// 78-Short Long Short
+function solution(a, b){
+    return a.length < b.length ? a+b+a:b+a+b;
+    // or
+    if(a.length < b.length) return a+b+a;
+    return b+a+b;
+}
