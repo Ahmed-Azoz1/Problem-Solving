@@ -967,6 +967,14 @@ function getChar(c){
 function solution(a, b){
     return a.length < b.length ? a+b+a:b+a+b;
     // or
-    if(a.length < b.length) return a+b+a;
-    return b+a+b;
+    // if(a.length < b.length) return a+b+a;
+    // return b+a+b;
+}
+
+// 79-Keep up the hoop
+function hoopCount (n) {
+    return n>= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it';
+    // or
+    // if (n >= 10) return("Great, now move on to tricks") ;
+    // return("Keep at it until you get it") 
 }
