@@ -978,3 +978,10 @@ function hoopCount (n) {
     // if (n >= 10) return("Great, now move on to tricks") ;
     // return("Keep at it until you get it") 
 }
+
+// 80-Is he gonna survive?
+function hero(bullets, dragons){
+    return bullets / 2 >=dragons;
+    // or
+    // return (bullets / 2 >= dragons) ? true : false;
+}
