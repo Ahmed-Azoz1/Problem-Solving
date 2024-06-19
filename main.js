@@ -985,3 +985,10 @@ function hero(bullets, dragons){
     // or
     // return (bullets / 2 >= dragons) ? true : false;
 }
+
+// 81-MakeUpperCase
+function makeUpperCase(str) {
+    return str.toUpperCase()
+    // or
+    // return str.replace(/[a-z]/g,s=>String.fromCharCode(s.charCodeAt(0)-32))
+}
