@@ -992,3 +992,14 @@ function makeUpperCase(str) {
     // or
     // return str.replace(/[a-z]/g,s=>String.fromCharCode(s.charCodeAt(0)-32))
 }
+
+// 82-Double Char
+function doubleChar(str) {
+    let end = '';
+    for(let char of str){
+        end +=char + char;
+    }
+    return end;
+    // or
+    // return [...str].map(char=>char+char).join('');
+}
