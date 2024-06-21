@@ -1003,3 +1003,15 @@ function doubleChar(str) {
     // or
     // return [...str].map(char=>char+char).join('');
 }
+
+
+// 83-Is it even?
+function testEven(n) {
+    return n % 2 ==0;
+    // or
+    // if ( n%2 === 0){
+    //     return true
+    // }else{
+    //     return false
+    // }
+}
