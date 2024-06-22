@@ -1015,3 +1015,12 @@ function testEven(n) {
     //     return false
     // }
 }
+
+// 84-Surface Area and Volume of a Box
+function getSize(width, height, depth){
+    return [2 *(width*height+width*depth+height*depth),width*height*depth];
+    // or
+    // let volume = width * height * depth;
+    // let area = 2 * (width * height + height * depth + depth * width);
+    // return [area, volume];
+}
