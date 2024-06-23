@@ -1024,3 +1024,14 @@ function getSize(width, height, depth){
     // let area = 2 * (width * height + height * depth + depth * width);
     // return [area, volume];
 }
+
+// 85-Find Multiples of a Number
+function findMultiples(integer, limit) {
+    let result = [];
+    for(let increment = 1;increment * integer <= limit;increment++){
+        result.push(increment * integer);
+    }
+    return result;
+    // or
+    // [...Array(limit / integer ^ 0)].map((_, res) => ++res * integer);
+}
