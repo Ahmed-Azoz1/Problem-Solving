@@ -1035,3 +1035,10 @@ function findMultiples(integer, limit) {
     // or
     // [...Array(limit / integer ^ 0)].map((_, res) => ++res * integer);
 }
+
+// 86-Parse nice int from char problem
+function getAge(inputString){
+    return parseInt(inputString[0]);
+    // or
+    // return +inputString[0];
+}
