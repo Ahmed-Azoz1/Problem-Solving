@@ -1042,3 +1042,14 @@ function getAge(inputString){
     // or
     // return +inputString[0];
 }
+
+// 87-Grasshopper - Terminal game combat function
+function combat(health, damage) {
+    return damage > health ? 0 : health - damage;
+    // or
+    // if (health - damage < 0){
+    //     return 0;
+    // }else{
+    // return health - damage;
+    // }
+}
