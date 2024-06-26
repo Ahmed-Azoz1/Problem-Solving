@@ -1053,3 +1053,13 @@ function combat(health, damage) {
     // return health - damage;
     // }
 }
+
+// 88-Classic Hello World
+class Solution{
+    static main(){
+        console.log("Hello World!")
+    }
+    // or
+    // main = () => {console.log("Hello World!")}
+}
+// Solution = new Solution
