@@ -1063,3 +1063,10 @@ class Solution{
     // main = () => {console.log("Hello World!")}
 }
 // Solution = new Solution
+
+// 89-Miles per gallon to kilometers per liter
+function converter (mpg) {
+    return Math.round(mpg / 4.54609188 * 1.609344 * 100) / 100;
+    // or
+    // return +(mpg * .354006043538).toFixed(2)
+}
