@@ -1070,3 +1070,16 @@ function converter (mpg) {
     // or
     // return +(mpg * .354006043538).toFixed(2)
 }
+
+// 90-Arguments to Binary addition
+function arr2bin(arr){
+    return arr.reduce((prev,curr)=>prev + (typeof curr == 'number' ? curr : 0),0).toString(2);
+    // or
+    // let sum = 0;
+    // arr.forEach((num)=>{
+    //     if(typeof num === 'number'){
+    //         sum += num;
+    //     }
+    // });
+    // return sum.toString(2);
+}
