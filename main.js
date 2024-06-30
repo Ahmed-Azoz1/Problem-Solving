@@ -1083,3 +1083,10 @@ function arr2bin(arr){
     // });
     // return sum.toString(2);
 }
+
+// 91-Exclusive "or" (xor) Logical Operator
+function xor(a, b) {
+    return a === b ? false : true;
+    // or
+    // return a != b;
+}
