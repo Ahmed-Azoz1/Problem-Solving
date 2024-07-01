@@ -1090,3 +1090,11 @@ function xor(a, b) {
     // or
     // return a != b;
 }
+
+// 92-Is the date today
+function isToday(date) {
+    let today = new Date();
+    return today.setHours(0,0,0,0) == date.setHours(0,0,0,0);
+    // or
+    // return new Date().toDateString() === date.toDateString();
+}
