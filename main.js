@@ -1098,3 +1098,8 @@ function isToday(date) {
     // or
     // return new Date().toDateString() === date.toDateString();
 }
+
+// 93-Basic Training: Add item to an Array
+websites.push('codewars');
+// or
+// websites[0] = "codewars";
