@@ -1103,3 +1103,11 @@ function isToday(date) {
 websites.push('codewars');
 // or
 // websites[0] = "codewars";
+
+
+// 94-Formatting decimal places #0
+function twoDecimalPlaces(n) {
+    return Number(n.toFixed(2));
+    // or
+    // return +n.toFixed(2);
+}
