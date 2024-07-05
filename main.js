@@ -1111,3 +1111,14 @@ function twoDecimalPlaces(n) {
     // or
     // return +n.toFixed(2);
 }
+
+// 95-Fix the Bugs (Syntax) - My First Kata
+function myFirstKata(a ,b) {
+    return typeof a == 'number' && typeof b == 'number' ? a % b + b % a :false;
+    // or
+    // if (typeof(a) !== "number" || typeof(b) !== "number") {
+    //     return false;
+    // } else {
+    //     return a % b + b % a;
+    // }
+}
