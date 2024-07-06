@@ -1122,3 +1122,10 @@ function myFirstKata(a ,b) {
     //     return a % b + b % a;
     // }
 }
+
+// 96-Welcome to the City
+function sayHello( name, city, state ) {
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+    // or
+    // return 'Hello, ' + name.join(' ') + '! Welcome to ' + city + ', ' + state + '!';
+}
