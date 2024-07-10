@@ -1144,3 +1144,14 @@ Sleigh.prototype.authenticate = function(name, password) {
 // Sleigh.prototype.authenticate = function(name, password) {
 //     return this.name == name && this.password == password;
 // };
+
+// 98-What is between?
+function between(a, b) {
+    let arr = [];
+    for(let i=a;i<=b;i++ ){
+        arr.push(i);
+    }
+    return arr;
+    // or
+    // [...Array(b - a + 1)].map((_, idx) => idx + a);
+}
