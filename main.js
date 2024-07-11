@@ -1155,3 +1155,19 @@ function between(a, b) {
     // or
     // [...Array(b - a + 1)].map((_, idx) => idx + a);
 }
+
+// 99-How old will I be in 2099?
+function  calculateAge(birth,current) {
+    let difference = current - birth;
+    if(birth == current) return `You were born this very year!`;
+    else if (difference == 1) return `You are 1 year old.`;
+    else if (difference > 1) return `You are ${difference} years old.`;
+    else if (difference === -1) return `You will be born in 1 year.`;
+    else return `You will be born in ${difference * -1} years.`;
+    // or
+    // return (current - birth > 1 ) ? `You are ${current - birth} years old.` : 
+    // (current - birth == -1) ? `You will be born in 1 year.` :
+    // (current - birth < 0) ? `You will be born in ${birth - current} years.` :
+    // (current - birth == 1 ) ? `You are 1 year old.` : 
+    // (current - birth == 0 ) ? `You were born this very year!` : false;
+}
