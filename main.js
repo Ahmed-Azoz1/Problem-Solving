@@ -1171,3 +1171,17 @@ function  calculateAge(birth,current) {
     // (current - birth == 1 ) ? `You are 1 year old.` : 
     // (current - birth == 0 ) ? `You were born this very year!` : false;
 }
+
+// 100-Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+    return current == `red` ? `green` : current == `green` ? `yellow` : `red`;
+    // or
+    // switch (current) {
+    //     case 'green':
+    //         return 'yellow';
+    //     case 'yellow':
+    //         return 'red';
+    //     default:
+    //         return 'green';
+    // }
+}
