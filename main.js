@@ -1185,3 +1185,10 @@ function updateLight(current) {
     //         return 'green';
     // }
 }
+
+// 101-Convert number to reversed array of digits
+function digitize(n) {
+    return [...String(n)].map(Number).reverse();
+    // or
+    // return Array.from(String(n), Number).reverse();
+}
