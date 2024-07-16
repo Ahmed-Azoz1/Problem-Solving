@@ -1192,3 +1192,12 @@ function digitize(n) {
     // or
     // return Array.from(String(n), Number).reverse();
 }
+
+// 102-Find the Remainder
+function remainder(n, m){
+    return a > b ? a % b : b % a;
+    // or
+    // let numbers = [n,m].sort((one,two)=>one-two);
+    // let [small,big] = numbers;
+    // return big % small;
+}
