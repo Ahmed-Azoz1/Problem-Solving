@@ -1201,3 +1201,14 @@ function remainder(n, m){
     // let [small,big] = numbers;
     // return big % small;
 }
+
+// 103-Lario and Muigi Pipe Problem
+function pipeFix(numbers){
+    let lastNumbers = [];
+    for(let i = numbers[0];i<= numbers[numbers.length -1];i++){
+        lastNumbers.push(i);
+    }
+    return lastNumbers;
+    // or
+    // return Array.from({ length: numbers.pop() - numbers[0] + 1 }, (v, i) => i + numbers[0]);
+}
