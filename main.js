@@ -1212,3 +1212,10 @@ function pipeFix(numbers){
     // or
     // return Array.from({ length: numbers.pop() - numbers[0] + 1 }, (v, i) => i + numbers[0]);
 }
+
+// 104-Dollars and Cents
+function formatMoney(amount){
+    return `$${amount.toFixed(2)}`
+    // or
+    // return '$' + amount.toFixed(2);
+}
