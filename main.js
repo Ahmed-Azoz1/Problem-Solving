@@ -1219,3 +1219,10 @@ function formatMoney(amount){
     // or
     // return '$' + amount.toFixed(2);
 }
+
+// 105-Returning Strings
+function greet(name){
+    return `Hello, ${name} how are you doing today?`
+    // or
+    // return "Hello, " + name + " how are you doing today?";
+}
