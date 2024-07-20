@@ -1226,3 +1226,16 @@ function greet(name){
     // or
     // return "Hello, " + name + " how are you doing today?";
 }
+
+// 106-How many stairs will Suzuki climb in 20 years?
+function stairsIn20(s){
+    return 20 * s.reduce((total,day)=>{return [...total,...day]},[]).reduce((sum,current)=>sum+current);
+    // or
+    // let stairs = 0;
+    // for (let i = 0; i < s.length; i++) {
+    //     for (let j = 0; j < s[i].length; j++) {
+    //         stairs += s[i][j];
+    //     }
+    // }
+    // return stairs * 20;
+}
