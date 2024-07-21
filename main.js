@@ -1239,3 +1239,10 @@ function stairsIn20(s){
     // }
     // return stairs * 20;
 }
+
+// 107-Simple validation of a username with regex
+function validateUsr(username) {
+    return /^[a-z\d_]{4,16}$/.test(username);
+    // or
+    // return username.length>=4&&username.length<=16&&!/\W|[A-Z]/.test(username);
+}
