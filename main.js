@@ -1246,3 +1246,13 @@ function validateUsr(username) {
     // or
     // return username.length>=4&&username.length<=16&&!/\W|[A-Z]/.test(username);
 }
+
+// 108-Super Duper Easy
+function problem(x){
+    return typeof x == 'number' ? x * 50 + 6 : 'Error';
+    // or
+    // if(typeof x === "string"){
+    //     return "Error";
+    // }
+    // return (x * 50) + 6;
+}
