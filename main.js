@@ -1256,3 +1256,18 @@ function problem(x){
     // }
     // return (x * 50) + 6;
 }
+
+// 109-Cat years, Dog years
+var humanYearsCatYearsDogYears = function(humanYears) {
+    if(humanYears ==1) {
+        return [1,15,15]
+    }else if(humanYears ==2){
+        return [2,24,24]
+    }else{
+        return [humanYears,24+(humanYears-2)*4,24+(humanYears-2)*5];
+    }
+    // or
+    // const cat = humanYears > 1 ? 24 + (humanYears-2)*4 : 15
+    // const dog = humanYears > 1 ? 24 + (humanYears-2)*5 : 15
+    // return [humanYears, cat, dog];
+}
