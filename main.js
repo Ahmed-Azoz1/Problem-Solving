@@ -1271,3 +1271,14 @@ var humanYearsCatYearsDogYears = function(humanYears) {
     // const dog = humanYears > 1 ? 24 + (humanYears-2)*5 : 15
     // return [humanYears, cat, dog];
 }
+
+// 110-Generate range of integers
+function generateRange(min, max, step){
+    let arr = [];
+    for (let i=min; i<=max; i += step) {
+        arr.push(i);
+    }
+    return arr;
+    // or
+    // return Array.from({length:(max-min)/step + 1},(_,index)=>min+index * step);
+}
