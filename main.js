@@ -1282,3 +1282,10 @@ function generateRange(min, max, step){
     // or
     // return Array.from({length:(max-min)/step + 1},(_,index)=>min+index * step);
 }
+
+// 111-For Twins: 2. Math operations
+function iceBrickVolume(radius, bottleLength, rimLength) {
+    return (bottleLength - rimLength) * 2 * radius * radius;
+    // or
+    // return  (2 * Math.pow(radius, 2)) * (bottleLength - rimLength)
+}
