@@ -1300,3 +1300,15 @@ function remove (string) {
     // or
     // return string.replace(/\!$/,'');
 }
+
+// 113-Find the Slope
+function slope(points){
+    return points[0] == points[2] ? 'undefined' : String((points[3]-points[1])/(points[2]-points[0]));
+    // or
+    // let y = points[3] - points[1];
+    // let x = points[2] - points[0];
+    // if (x==0){
+        // return String(undefined);
+    // }
+    // return String(y/x);
+}
