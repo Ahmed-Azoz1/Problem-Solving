@@ -1289,3 +1289,14 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
     // or
     // return  (2 * Math.pow(radius, 2)) * (bottleLength - rimLength)
 }
+
+// 112-Exclamation marks series #1: Remove an exclamation mark from the end of string
+function remove (string) {
+    let str =  string.split("");
+    if(str[str.length - 1].includes("!")) {
+        str.pop()
+    }
+    return str.join("") 
+    // or
+    // return string.replace(/\!$/,'');
+}
