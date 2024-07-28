@@ -1312,3 +1312,11 @@ function slope(points){
     // }
     // return String(y/x);
 }
+
+// 114-Expressions Matter
+function expressionMatter(a, b, c) {
+    return Math.max(a+b+c,a*b*c,(a+b)*c,a*(b+c));
+    // or
+    // let values = [(a*(b+c)), (a*b*c), (a+b*c), ((a+b)*c), (a+b+c)];
+    // return Math.max(...values);
+}
