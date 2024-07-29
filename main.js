@@ -1344,3 +1344,16 @@ function whatday(num) {
     // or
     // return ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][num -1] || "Wrong, please enter a number between 1 and 7";
 }
+
+// 116-Quadrants
+function quadrant(x, y) {
+    if (x > 0 && y > 0) return 1;
+    if (x < 0 && y > 0) return 2;
+    if (x < 0 && y < 0) return 3;
+    return 4;
+    // or
+    // let area = [[2,1],[3,4]]
+    // let xa = x > 0 ? 1 : 0;
+    // let ya = y > 0 ? 0 : 1;
+    // return area[ya][xa];
+}
