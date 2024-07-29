@@ -1357,3 +1357,11 @@ function quadrant(x, y) {
     // let ya = y > 0 ? 0 : 1;
     // return area[ya][xa];
 }
+
+// 117-Remove the time
+function shortenToDate(longDate) {
+    const [date, time] = longDate.split(',');
+    return date;
+    // or
+    // return longDate.split(',')[0];
+}
