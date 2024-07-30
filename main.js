@@ -1365,3 +1365,10 @@ function shortenToDate(longDate) {
     // or
     // return longDate.split(',')[0];
 }
+
+// 118-Is this a triangle?
+function isTriangle(a,b,c){
+    return a+b>c && b+c>a && c+a>b;
+    // or
+    // return Math.max(a,b,c)<(a+b+c)/2;
+}
