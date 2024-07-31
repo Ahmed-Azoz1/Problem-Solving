@@ -1372,3 +1372,16 @@ function isTriangle(a,b,c){
     // or
     // return Math.max(a,b,c)<(a+b+c)/2;
 }
+
+// 119-Rotate for a Max
+function maxRot(n) {
+    let str = n.toString();
+    let arr = [str];
+    for (var i=0;i<=str.length-1 ;i++){
+        str = str.slice(0,i)+str.slice(i+1)+str[i];
+        arr.push(str.split().join());
+    }
+    return Math.max.apply(null, arr);
+    // or
+    // return [...`${n}`].reduce((pre, _, idx) => Math.max(pre, n = `${n}`.slice(0, idx) + `${n}`.slice(idx + 1) + `${n}`.slice(idx, idx + 1)), n);
+}
