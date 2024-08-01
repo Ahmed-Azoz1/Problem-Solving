@@ -1385,3 +1385,10 @@ function maxRot(n) {
     // or
     // return [...`${n}`].reduce((pre, _, idx) => Math.max(pre, n = `${n}`.slice(0, idx) + `${n}`.slice(idx + 1) + `${n}`.slice(idx, idx + 1)), n);
 }
+
+// 120-Do you speak "English"?
+function spEng(sentence){
+    return /english/i.test(sentence);
+    // or
+    // return sentence.toLowerCase().includes("english");
+}
