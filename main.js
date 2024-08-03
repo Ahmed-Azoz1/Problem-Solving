@@ -1417,3 +1417,10 @@ function defineSuit(card) {
     //         return 'spades'
     // }
 }
+
+// 122-Be Concise IV - Index of an element in an array
+function find(a, e) {
+    return a.indexOf(e) >= 0 ? a.indexOf(e) : "Not found";
+    // or
+    // return a.includes(e) ? a.indexOf(e) : `Not found`;
+}
