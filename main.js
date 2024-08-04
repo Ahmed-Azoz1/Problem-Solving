@@ -1424,3 +1424,18 @@ function find(a, e) {
     // or
     // return a.includes(e) ? a.indexOf(e) : `Not found`;
 }
+
+// 123-A Strange Trip to the Market
+function isLockNessMonster(s) {
+    if(s.toLowerCase().includes('tree fiddy')){
+        return true;
+    }else if(s.toLowerCase().includes('three fiddy')){
+        return true;
+    }else if(s.toLowerCase().includes('3.50')){
+        return true;
+    }else{
+        return false;
+    }
+    // or
+    // return s.includes("tree fiddy") || s.includes("3.50");
+}
