@@ -1439,3 +1439,17 @@ function isLockNessMonster(s) {
     // or
     // return s.includes("tree fiddy") || s.includes("3.50");
 }
+
+// 124-A wolf in sheep's clothing
+function warnTheSheep(queue) {
+    let position = queue.reverse();
+    let index = position.indexOf('wolf');
+    if(index == 0){
+        return `Pls go away and stop eating my sheep`;
+    }else{
+        return `Oi! Sheep number ${index}! You are about to be eaten by a wolf!`;
+    }
+    // or
+    // let position = queue.reverse().indexOf('wolf');
+    // return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+}
