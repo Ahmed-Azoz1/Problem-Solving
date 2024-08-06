@@ -1453,3 +1453,10 @@ function warnTheSheep(queue) {
     // let position = queue.reverse().indexOf('wolf');
     // return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
 }
+
+// 125-Merging sorted integer arrays (without duplicates)
+function mergeArrays(a, b) {
+    return [...new Set(a.concat(b))].sort((a,b)=>a-b);
+    // or
+    // return Array.from(new Set(a.concat(b).sort((x,y)=>x-y)))
+}
