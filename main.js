@@ -1460,3 +1460,10 @@ function mergeArrays(a, b) {
     // or
     // return Array.from(new Set(a.concat(b).sort((x,y)=>x-y)))
 }
+
+// 126-Template Strings
+const templateStrings = (noun, adjective) =>{
+    return `${noun} are ${adjective}`;
+    // or
+    // return noun + " are " + adjective;
+}
