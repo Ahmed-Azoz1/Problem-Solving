@@ -1487,3 +1487,11 @@ function leo(oscar){
     // };
     // return responses[oscar] || (oscar > 88 ? "Leo got one already!" : "When will you give Leo an Oscar?");
 }
+
+// 128-Hello, Name or World!
+function hello(name) {
+    if(!name) return 'Hello, World!'
+    return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`;
+    // or
+    // return `Hello, ${ name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
+}
