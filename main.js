@@ -1495,3 +1495,11 @@ function hello(name) {
     // or
     // return `Hello, ${ name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
 }
+
+// 129-Pole Vault Starting Marks
+function startingMark(bodyHeight){
+    return +(bodyHeight * 3.9354 + 3.4681).toFixed(2);
+    // or
+    // return (m=>+(m * bodyHeight + 9.45 - m * 1.52).toFixed(2))
+    // ((10.67 - 9.45) / (1.83 - 1.52));
+}
