@@ -1503,3 +1503,15 @@ function startingMark(bodyHeight){
     // return (m=>+(m * bodyHeight + 9.45 - m * 1.52).toFixed(2))
     // ((10.67 - 9.45) / (1.83 - 1.52));
 }
+
+// 130-How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+    return classPoints.reduce((prev,curr)=>prev + curr) / classPoints.length < yourPoints;
+    // or
+    // let avg = classPoints.reduce((prev,curr) => prev + curr) / classPoints.length;
+    // if (avg < yourPoints) {
+    //     return true;
+    // }else {
+    //     return false;
+    // }
+}
