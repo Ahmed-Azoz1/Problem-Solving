@@ -1515,3 +1515,10 @@ function betterThanAverage(classPoints, yourPoints) {
     //     return false;
     // }
 }
+
+// 131-Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+function remove (string) {  
+    return string.replace(/!+$/,'');
+    // or
+    // return string.charAt(string.length - 1) === '!' ? remove(string.slice(0, string.length - 1)) : string;
+}
