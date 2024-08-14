@@ -1536,3 +1536,18 @@ function animals(heads, legs){
     //     return [chicken, cow];
     // }
 }
+
+// 133-Drink about
+function peopleWithAgeDrink(old) {
+    return `drink ${old < 14 && 'toddy' || old < 18 && 'coke' || old < 21 && 'beer' || old >= 21 && 'whisky'}`;
+    // or
+    // if(old < 14){
+    //     return 'drink toddy'
+    // }else if(old < 18){
+    //     return 'drink coke'
+    // }else if(old < 21){
+    //     return 'drink beer'
+    // }else{
+    //     return 'drink whisky'
+    // }
+};
