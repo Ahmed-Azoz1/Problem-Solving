@@ -1551,3 +1551,11 @@ function peopleWithAgeDrink(old) {
     //     return 'drink whisky'
     // }
 };
+
+// 134-Mr. Freeze
+Object.freeze(MrFreeze);
+// or
+// function freezeObj(obj) {
+//     Object.freeze(obj);
+// }
+// freezeObj(MrFreeze);
