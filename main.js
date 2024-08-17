@@ -1579,3 +1579,22 @@ function Hero (name) {
 //         this.experience = 0;
 //     }
 // }
+
+// 136-Wilson primes
+function amIWilson(p) {
+    p = BigInt(p);
+    return ((factorial(p-1n)) + 1n) % (p * p) == 0n;
+}
+function factorial(x){
+    if(x <= 1n){
+        return 1n;
+    }
+    return x * factorial(x - 1n);
+}
+// or
+// function amIWilson(p) {
+//     p = BigInt(p);
+//     const fac = n => n ? n * fac(n-1n) : 1n;
+//     const d = (fac(p-1n) + 1n);
+//     return !(d % (p * p));
+// }
