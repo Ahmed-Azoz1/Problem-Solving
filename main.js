@@ -1598,3 +1598,14 @@ function factorial(x){
 //     const d = (fac(p-1n) + 1n);
 //     return !(d % (p * p));
 // }
+
+// 137-String cleaning
+function stringClean(s){
+    return s.replace(/\d/g,'');
+    // or
+    // let result = '';
+    // for(let i=0;i<s.length;i++) {
+    //     if(isNaN(s[i])||s[i]==' ') result+=s[i]; 
+    // }
+    // return result;
+}
