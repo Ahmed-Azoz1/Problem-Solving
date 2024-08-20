@@ -1616,3 +1616,14 @@ function remove (string) {
     // or
     // return string.replace(/!/g, '') + "!";
 }
+
+// 139-Grader
+function grader(score) {
+    if (score>1||score<0.6) return 'F'
+    if (score<0.7) return 'D'
+    if (score<0.8) return 'C'
+    if (score<0.9) return 'B'
+    return 'A'
+    // or
+    // return score > 1 || score < 0.6 ? 'F' : score < 0.7 ? 'D' : score < 0.8 ? 'C' : score < 0.9 ? 'B' : 'A' ;
+}
