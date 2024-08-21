@@ -1627,3 +1627,21 @@ function grader(score) {
     // or
     // return score > 1 || score < 0.6 ? 'F' : score < 0.7 ? 'D' : score < 0.8 ? 'C' : score < 0.9 ? 'B' : 'A' ;
 }
+
+// 140-Grasshopper - Grade book
+function getGrade (s1, s2, s3) {
+    let score = (s1 + s2 + s3) / 3;
+    if(score >= 90){
+        return 'A';
+    }else if(score >= 80){
+        return 'B';
+    }else if(score >= 70){
+        return 'C';
+    }else if(score >= 60){
+        return 'D';
+    }else {
+        return 'F';
+    }
+    // or
+    // return score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "F"
+}
