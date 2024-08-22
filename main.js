@@ -1645,3 +1645,13 @@ function getGrade (s1, s2, s3) {
     // or
     // return score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "F"
 }
+
+// 141-The 'if' function
+function _if(bool, func1, func2) {
+    return bool ? func1() : func2();
+    // or
+    // if(bool) {
+    //     return func1();
+    // } 
+    // return func2();
+}
