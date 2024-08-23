@@ -1655,3 +1655,14 @@ function _if(bool, func1, func2) {
     // } 
     // return func2();
 }
+
+// 142-Highest and Lowest
+function highAndLow(numbers){
+    const arr = numbers.split(' ').map(Number);
+    const max = Math.max(...arr)
+    const low = Math.min(...arr)
+    return `${max} ${low}`
+    // or
+    // numbers = numbers.split(' ');
+    // return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
