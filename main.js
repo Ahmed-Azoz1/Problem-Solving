@@ -1666,3 +1666,13 @@ function highAndLow(numbers){
     // numbers = numbers.split(' ');
     // return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 }
+
+// 143-Descending Order
+function descendingOrder(n){
+    let myFunc = num => Number(num);
+    let intArr = Array.from(String(n), myFunc);
+    const arr = intArr.sort(function(a, b){return b-a});
+    return Number(arr.join(''));
+    // or
+    // return parseInt(String(n).split('').sort().reverse().join(''))
+}
