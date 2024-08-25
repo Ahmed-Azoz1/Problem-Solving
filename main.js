@@ -1676,3 +1676,17 @@ function descendingOrder(n){
     // or
     // return parseInt(String(n).split('').sort().reverse().join(''))
 }
+
+// 144-Sum of a sequence
+const sequenceSum = (begin, end, step) => {
+    let result = 0;
+    for(let i = begin;i <= end; i += step){
+        result += i;
+    }
+    return result;
+    // or
+    // if (begin > end) {
+    //     return 0;
+    // }
+    // return begin + sequenceSum(begin + step, end, step);
+};
