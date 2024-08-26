@@ -1690,3 +1690,15 @@ const sequenceSum = (begin, end, step) => {
     // }
     // return begin + sequenceSum(begin + step, end, step);
 };
+
+// 145-Simple Fun #384: Is Turing's Equation?
+function isTuringEquation(s){
+    let arr = s.replace('+','=').split('=');
+    let first = arr[0].split('').reverse().join('')*1;
+    let second = arr[1].split('').reverse().join('')*1;
+    let third = arr[2].split('').reverse().join('')*1;
+    return first + second===third;
+    // or
+    // let [a,b,c] = s.split(/[+=]+/).map(n=>(+n.split('').reverse().join('')));
+    // return a + b === c;
+}
