@@ -1702,3 +1702,10 @@ function isTuringEquation(s){
     // let [a,b,c] = s.split(/[+=]+/).map(n=>(+n.split('').reverse().join('')));
     // return a + b === c;
 }
+
+// 146-Remove duplicates from list
+function distinct(a) {
+    return [...new Set(a)];
+    // or
+    return Array.from(new Set(a));
+}
