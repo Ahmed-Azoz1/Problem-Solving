@@ -1707,5 +1707,12 @@ function isTuringEquation(s){
 function distinct(a) {
     return [...new Set(a)];
     // or
-    return Array.from(new Set(a));
+    // return Array.from(new Set(a));
+}
+
+// 147-noobCode 02: TRICKY QUESTIONS ( primitives and operator precedence)
+function greaterThanLessThan (a,b,c) {
+    return a < b < c;
+    // or
+    // return (a < b) < c ;
 }
