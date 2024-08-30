@@ -1716,3 +1716,15 @@ function greaterThanLessThan (a,b,c) {
     // or
     // return (a < b) < c ;
 }
+
+// 148-Reversing Words in a String
+function reverse(string){
+    return string.split(" ").reverse().join(" ");
+    // or
+    // let arr = string.split(' ');
+    // let rev = [];
+    // for (let i = arr.length - 1; i > -1; i--) {
+    //     rev.push(arr[i]);
+    // }
+    // return rev.join(' ');
+}
