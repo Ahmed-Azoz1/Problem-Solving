@@ -1728,3 +1728,10 @@ function reverse(string){
     // }
     // return rev.join(' ');
 }
+
+// 149-Geometry Basics: Circle Area in 2D
+function circleArea(circle){
+    return Math.PI * circle.radius ** 2;
+    // or
+    // return radius * radius * Math.PI
+}
