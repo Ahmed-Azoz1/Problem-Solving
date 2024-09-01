@@ -1735,3 +1735,15 @@ function circleArea(circle){
     // or
     // return radius * radius * Math.PI
 }
+
+// 150-validate code with simple regex
+function validateCode (code) {
+    let str = code.toString().split("");
+    if(str[0] == "1" || str[0] == "2" || str[0] == "3"){
+        return true;
+    }else{
+        return false;
+    }
+    // or
+    // return /^[123]/.test(code);
+}
