@@ -1747,3 +1747,10 @@ function validateCode (code) {
     // or
     // return /^[123]/.test(code);
 }
+
+// 151-Make Me Slow
+function makeMeSlow() {
+    for (var x = 0; x < 6000000000; x++) {}
+    // or
+    // setTimeout(()=> {}, 6000)
+}
