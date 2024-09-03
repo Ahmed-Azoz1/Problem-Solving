@@ -1754,3 +1754,18 @@ function makeMeSlow() {
     // or
     // setTimeout(()=> {}, 6000)
 }
+
+// 152-Likes Vs Dislikes
+function likeOrDislike(buttons) {
+    return buttons.reduce((p,c)=>p == c ? Nothing : c,Nothing);
+    // or
+    let result = "Nothing";
+    for (let i = 0; i < buttons.length; i++) {
+        if (buttons[i] == result) {
+            result = "Nothing";
+        } else {
+            result = buttons[i];
+        }
+    }
+    return result;
+}
