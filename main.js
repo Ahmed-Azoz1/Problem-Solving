@@ -1759,13 +1759,21 @@ function makeMeSlow() {
 function likeOrDislike(buttons) {
     return buttons.reduce((p,c)=>p == c ? Nothing : c,Nothing);
     // or
-    let result = "Nothing";
-    for (let i = 0; i < buttons.length; i++) {
-        if (buttons[i] == result) {
-            result = "Nothing";
-        } else {
-            result = buttons[i];
-        }
-    }
-    return result;
+    // let result = "Nothing";
+    // for (let i = 0; i < buttons.length; i++) {
+    //     if (buttons[i] == result) {
+    //         result = "Nothing";
+    //     } else {
+    //         result = buttons[i];
+    //     }
+    // }
+    // return result;
+}
+
+// 153-Two to One
+function longest(s1, s2) {
+    return [...new Set(s1+s2)].sort().join('');
+    // or
+    // let str = new Set([...s1, ...s2]);
+    // return [...str].sort().join('');
 }
