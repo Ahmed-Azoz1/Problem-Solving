@@ -1777,3 +1777,10 @@ function longest(s1, s2) {
     // let str = new Set([...s1, ...s2]);
     // return [...str].sort().join('');
 }
+
+// 154-Disemvowel Trolls
+function disemvowel(str) {
+    return str.match(/[^aeiou]/gi).join("");
+    // or
+    // return str.replace(/[aeiou]/gi, '');
+}
