@@ -1784,3 +1784,12 @@ function disemvowel(str) {
     // or
     // return str.replace(/[aeiou]/gi, '');
 }
+
+// 155-Grasshopper - Terminal game move function
+function move (position, roll) {
+    return position + (roll*2);
+    // or
+    // let rolls = roll * 2;
+    // let total = position + rolls;
+    // return total;
+}
