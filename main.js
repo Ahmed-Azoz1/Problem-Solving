@@ -1793,3 +1793,16 @@ function move (position, roll) {
     // let total = position + rolls;
     // return total;
 }
+
+// 156-The wheat/rice and chessboard problem
+function squaresNeeded(grains){
+    let square = 0
+    let ans = 1
+    while (ans <= grains){
+        ans *= 2
+        square += 1
+    }
+    return square;
+    // or
+    // return Math.ceil(Math.log2(grains+1))
+}
