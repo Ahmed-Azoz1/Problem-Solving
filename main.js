@@ -1850,3 +1850,12 @@ function greet(language) {
     //     default: return "Welcome";
     // }
 }
+
+// 158-Printing Array elements with Comma delimiters
+function printArray(array){
+    let list = []
+    array.map((word)=>list.push(word))
+    return list;
+    // or
+    // return array.join();
+}
