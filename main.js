@@ -1859,3 +1859,17 @@ function printArray(array){
     // or
     // return array.join();
 }
+
+// 159-My Language Skills
+function myLanguages(results) {
+    let resultsSort = Object.entries(results).sort((a, b) => b[1] - a[1]);
+    let result = [];
+    for (let language of resultsSort) {
+        if (language[1] >= 60) {
+            result.push(language[0]);
+        }
+    }
+    return result;
+    // or
+    // return Object.keys(results).filter(r => results[r] > 59).sort((a,b) => results[b] - results[a]);
+}
