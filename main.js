@@ -1873,3 +1873,16 @@ function myLanguages(results) {
     // or
     // return Object.keys(results).filter(r => results[r] > 59).sort((a,b) => results[b] - results[a]);
 }
+
+// 160-Friend or Foe?
+function friend(friends){
+    let result = [];
+    for(let i = 0; i < friends.length; i++){
+        if(friends[i].length == 4){
+            result.push(friends[i])
+        }
+    }
+    return result;
+    // or
+    // return friends.filter(n => n.length === 4)
+}
