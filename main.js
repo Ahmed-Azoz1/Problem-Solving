@@ -1886,3 +1886,13 @@ function friend(friends){
     // or
     // return friends.filter(n => n.length === 4)
 }
+
+// 161-Stacked Balls - 2D
+function stackHeight2d(layers) {
+    return !layers ? 0 : ((layers - 1) * Math.sqrt(3) / 2 + 1);
+    // or
+    // if (layers === 0) {
+    //     return 0;
+    // }
+    // return 1 + (layers - 1) * Math.sqrt(3) / 2;
+}
