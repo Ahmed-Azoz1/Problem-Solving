@@ -1896,3 +1896,16 @@ function stackHeight2d(layers) {
     // }
     // return 1 + (layers - 1) * Math.sqrt(3) / 2;
 }
+
+// 162-"this" is a problem
+function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return this.name = `${first} ${last}`;
+    // or
+    // return { 
+    //     firstName : first,
+    //     lastName : last,
+    //     name: first + ' ' + last
+    // }
+}
