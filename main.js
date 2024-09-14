@@ -1909,3 +1909,14 @@ function NameMe(first, last) {
     //     name: first + ' ' + last
     // }
 }
+
+// 163-Volume of a Cuboid
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height;
+    }
+    // or
+    // getVolumeOfCuboid(length, width, height) {
+    //     return length * width * height
+    // }
+}
