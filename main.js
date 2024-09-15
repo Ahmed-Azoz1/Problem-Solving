@@ -1920,3 +1920,14 @@ class Kata {
     //     return length * width * height
     // }
 }
+
+// 164-Price of Mangoes
+function mango(quantity, price){
+    return price * (quantity - Math.floor(quantity / 3))
+    // or
+    // if( quantity / 3 < 1 ){
+    //     return quantity * price;
+    // } else {
+    //     return (quantity-(Math.floor(quantity / 3))) *price;
+    // }
+}
