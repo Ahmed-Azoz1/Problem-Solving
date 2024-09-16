@@ -1931,3 +1931,15 @@ function mango(quantity, price){
     //     return (quantity-(Math.floor(quantity / 3))) *price;
     // }
 }
+
+// 165-Reversed Words
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
+    // or
+    // let reverse = [];
+    // let words = str.split(" ");
+    // for(let i=words.length-1; i>=0; i--){
+    //     reverse.push(words[i]);
+    // }
+    // return reverse.join(" ")
+}
