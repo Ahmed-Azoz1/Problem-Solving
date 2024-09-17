@@ -1943,3 +1943,14 @@ function reverseWords(str){
     // }
     // return reverse.join(" ")
 }
+
+// 166-Reversed sequence
+const reverseSeq = n => {
+    let result = [];
+    for(let i=n;i>0;i--){
+        result.push(i)
+    }
+    return result;
+    // or
+    // return Array(n).fill(0).map((e, i) => n - i );
+};
