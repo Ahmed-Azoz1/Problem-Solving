@@ -1954,3 +1954,10 @@ const reverseSeq = n => {
     // or
     // return Array(n).fill(0).map((e, i) => n - i );
 };
+
+// 167-Grasshopper - Debug sayHello
+function sayHello(name) {
+    return `Hello, ${name}`
+    // or
+    // return 'Hello, ' +  name;
+}
