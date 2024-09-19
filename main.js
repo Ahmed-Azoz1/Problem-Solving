@@ -1961,3 +1961,17 @@ function sayHello(name) {
     // or
     // return 'Hello, ' +  name;
 }
+
+// 168-Find Maximum and Minimum Values of a List
+var min = function(list){
+    return Math.min(...list);
+    // or
+    // list.sort((a, b) => (a - b));
+    // return list[0];
+}
+var max = function(list){
+    return Math.max(...list);
+    // or
+    // list.sort((a, b) => (b - a));
+    // return list[0];
+}
