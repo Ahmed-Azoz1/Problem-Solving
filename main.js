@@ -1975,3 +1975,10 @@ var max = function(list){
     // list.sort((a, b) => (b - a));
     // return list[0];
 }
+
+// 169-Convert to Binary
+function toBinary(n){
+    return +n.toString(2);
+    // or
+    // return parseInt(n.toString(2));
+}
