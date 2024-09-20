@@ -1982,3 +1982,11 @@ function toBinary(n){
     // or
     // return parseInt(n.toString(2));
 }
+
+// 170-Will there be enough space?
+function enough(cap, on, wait) {
+    if(cap - (on + wait) >= 0) return 0;
+    return (on + wait) - cap;
+    // or
+    // return (on + wait > cap) ? on + wait - cap : 0;
+}
