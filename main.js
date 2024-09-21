@@ -1990,3 +1990,19 @@ function enough(cap, on, wait) {
     // or
     // return (on + wait > cap) ? on + wait - cap : 0;
 }
+
+// 171-altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+String.prototype.toAlternatingCase = function () {
+    return this.split("").map(item => item === item.toUpperCase()? item.toLowerCase(): item.toUpperCase()).join('');
+    // or
+    // new_str = "";
+    // for(let i = 0; i < this.length; i++) {
+    //     if(this[i] === this[i].toUpperCase()) {
+    //         new_str += this[i].toLowerCase();
+    //     }
+    //     else {
+    //         new_str += this[i].toUpperCase();
+    //     }
+    // }
+    // return new_str;
+}
