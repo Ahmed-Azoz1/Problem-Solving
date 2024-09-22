@@ -2006,3 +2006,17 @@ String.prototype.toAlternatingCase = function () {
     // }
     // return new_str;
 }
+
+// 172-Coding 3min : Jumping Dutch act
+function sc(floor){
+    if(floor <= 1) {
+        return '';
+    } else if(floor < 7) {
+        return 'Aa~ '.repeat(floor - 1) + 'Pa! ' + 'Aa!';
+    } else {
+        return 'Aa~ '.repeat(floor - 1) + 'Pa!';
+    }
+    // or
+    // if(floor <= 1) return "";
+    // return 'Aa~ '.repeat(floor-1) + 'Pa!' + (floor<=6 ? ' Aa!': '');
+}
