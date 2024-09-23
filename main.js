@@ -2020,3 +2020,13 @@ function sc(floor){
     // if(floor <= 1) return "";
     // return 'Aa~ '.repeat(floor-1) + 'Pa!' + (floor<=6 ? ' Aa!': '');
 }
+
+// 173-Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+    return bool ? 'Yes' : 'No';
+    // or
+    // if( bool ){
+    //     return "Yes";
+    // }
+    // return "No";
+}
