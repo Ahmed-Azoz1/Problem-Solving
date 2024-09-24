@@ -2030,3 +2030,10 @@ function boolToWord( bool ){
     // }
     // return "No";
 }
+
+// 174-Convert a string to an array
+function stringToArray(string){
+    return string.split(' ');
+    // or
+    // return string.trim().split(" ");
+}
