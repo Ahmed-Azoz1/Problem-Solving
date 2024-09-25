@@ -2037,3 +2037,10 @@ function stringToArray(string){
     // or
     // return string.trim().split(" ");
 }
+
+// 175-V A P O R C O D E
+function vaporcode(string) {
+    return string.toUpperCase().split(' ').join('').split('').join('  ');
+    // or
+    return Array.from(string.replace(/\s+/g, "").toUpperCase()).join("  ")
+}
