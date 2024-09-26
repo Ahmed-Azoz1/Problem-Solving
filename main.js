@@ -2042,5 +2042,14 @@ function stringToArray(string){
 function vaporcode(string) {
     return string.toUpperCase().split(' ').join('').split('').join('  ');
     // or
-    return Array.from(string.replace(/\s+/g, "").toUpperCase()).join("  ")
+    // return Array.from(string.replace(/\s+/g, "").toUpperCase()).join("  ");
+}
+
+// 176-Do I get a bonus?
+function bonusTime(salary, bonus) {
+    let result;
+    bonus ? result = salary * 10 : result = salary;
+    return `£${result}`;
+    // or
+    // return bonus ? `£${10 * salary}` : `£${salary}`;
 }
