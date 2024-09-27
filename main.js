@@ -2053,3 +2053,18 @@ function bonusTime(salary, bonus) {
     // or
     // return bonus ? `£${10 * salary}` : `£${salary}`;
 }
+
+// 177-Indexed capitalization
+function capitalize(s,arr){
+    let chars = s.split('');
+    arr.forEach(index => {
+        if (index >= 0 && index < chars.length) {
+            chars[index] = chars[index].toUpperCase();
+        }
+    });
+    return chars.join('');
+    // or
+    // const arrLetters = [...s]
+    // arr.map(index=>  index > s.length ? '' : arrLetters[index] = arrLetters[index].toUpperCase())
+    // return arrLetters.join('')
+};
