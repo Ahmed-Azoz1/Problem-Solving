@@ -2068,3 +2068,11 @@ function capitalize(s,arr){
     // arr.map(index=>  index > s.length ? '' : arrLetters[index] = arrLetters[index].toUpperCase())
     // return arrLetters.join('')
 };
+
+// 178-Duck Duck Goose
+function duckDuckGoose(players, goose) {
+    return players[(goose -1) % players.length].name;
+    // or
+    // const index = (goose - 1) % players.length;
+    // return players[index].name;
+}
