@@ -2076,3 +2076,12 @@ function duckDuckGoose(players, goose) {
     // const index = (goose - 1) % players.length;
     // return players[index].name;
 }
+
+// 179-Geometry Basics: Distance between points in 2D
+function distanceBetweenPoints(a, b) {
+    const x = a.x - b.x;
+    const y = a.y - b.y;
+    return Math.sqrt(x ** 2 + y ** 2)
+    // or
+    // return Math.hypot(a.x - b.x, a.y - b.y);
+}
