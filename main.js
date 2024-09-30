@@ -2085,3 +2085,14 @@ function distanceBetweenPoints(a, b) {
     // or
     // return Math.hypot(a.x - b.x, a.y - b.y);
 }
+
+// 180-No oddities here
+function noOdds( values ){
+    return values.filter(x => x % 2 === 0);
+    // or
+    // let arr = [];
+    // for(let num in values){
+    //     if(num%2==0) arr.push(+num);
+    // }
+    // return arr;
+}
