@@ -2115,3 +2115,43 @@ function getDivisorsCnt(n){
     // }
     // return count;
 }
+
+// 182-The 'spiraling' box
+function createBox(m, n) {
+    // Create an empty matrix filled with zeros
+    const matrix = Array.from({ length: n }, () => Array(m).fill(0));
+
+    // Fill the matrix according to the layers
+    for (let layer = 0; layer < Math.ceil(Math.min(m, n) / 2); layer++) {
+        
+        // Fill the top edges
+        for (let i = layer; i < m - layer; i++) {
+            matrix[layer][i] = layer + 1;   // Top edge
+        }
+
+        // Fill the bottom edges
+        for (let i = layer; i < m - layer; i++) {
+            matrix[n - layer - 1][i] = layer + 1;  // Bottom edge
+        }
+
+        // Fill the side edges
+        for (let i = layer; i < n - layer; i++) {
+            matrix[i][layer] = layer + 1;  // Left edge
+            matrix[i][m - layer - 1] = layer + 1;  // Right edge
+        }
+    }
+
+    return matrix;
+    
+    // or
+
+    // let matrixArray = [];
+    // for (let i = 0; i < n; i++) {   
+    //     matrixArray[i] = [];
+    //     for (let j = 0; j < m; j++) { 
+    //     let min = Math.min(i, j, m - j - 1, n - i - 1);
+    //     matrixArray[i][j] = min + 1;
+    //     }
+    // }
+    // return matrixArray;
+}
