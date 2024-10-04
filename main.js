@@ -2155,3 +2155,10 @@ function createBox(m, n) {
     // }
     // return matrixArray;
 }
+
+// 183-Vowel Count
+function getCount(str) {
+    return (str.match(/[aeiou]/g) || []).length;
+    // or
+    // return str.split('').filter(letter => "aeiou".includes(letter)).length;
+}
