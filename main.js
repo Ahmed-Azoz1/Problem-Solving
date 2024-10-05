@@ -2162,3 +2162,11 @@ function getCount(str) {
     // or
     // return str.split('').filter(letter => "aeiou".includes(letter)).length;
 }
+
+// 184-See You Next Happy Year
+function nextHappyYear(year){
+    while(new Set(String(++year).split('')).size < 4);
+    return year;
+    // or
+    // return /(.).*\1/.test(year + 1) ? nextHappyYear(year + 1) : year + 1;
+}
