@@ -2170,3 +2170,12 @@ function nextHappyYear(year){
     // or
     // return /(.).*\1/.test(year + 1) ? nextHappyYear(year + 1) : year + 1;
 }
+
+// 185-Move 10
+function moveTen(s){
+    return s.split('').map(ele=>ele.charCodeAt() + 10>122 ? 
+                            String.fromCharCode(ele.charCodeAt() - 16): 
+                            String.fromCharCode(ele.charCodeAt() + 10)).join('')
+    // or
+    // return s.replace(/./g, val => String.fromCharCode(97 + (val.charCodeAt() - 87 ) % 26));
+}
