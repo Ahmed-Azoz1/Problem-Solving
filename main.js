@@ -2179,3 +2179,15 @@ function moveTen(s){
     // or
     // return s.replace(/./g, val => String.fromCharCode(97 + (val.charCodeAt() - 87 ) % 26));
 }
+
+// 186-Training JS #15: Methods of Number object--toFixed(), toExponential() and toPrecision()
+function howManySmaller(arr,n){
+    return arr.filter((ele)=>ele.toFixed(2) < n).length;
+    // or
+    // total = 0;
+    // for (i = 0; i < arr.length; i++){
+    //     if (arr[i].toFixed(2) < n)
+    //     total++;
+    // }
+    // return total;
+}
