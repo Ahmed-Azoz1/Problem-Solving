@@ -2191,3 +2191,16 @@ function howManySmaller(arr,n){
     // }
     // return total;
 }
+
+// 187-Enumerable Magic #25 - Take the First N Elements
+function take(arr, n) {
+    return arr.slice(0,n);
+    // or
+    // let res = [];
+    // for (let i in arr) {
+    //     if (i < n && i < arr.length) {
+    //         res.push(arr[i]);
+    //     }
+    // }
+    // return res;
+}
