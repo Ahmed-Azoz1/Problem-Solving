@@ -2204,3 +2204,15 @@ function take(arr, n) {
     // }
     // return res;
 }
+
+// 188-Square Every Digit
+function squareDigits(num){
+    return +String(num).split('').map(ele=>(+ele) **2).join('');
+    // or
+    // let string = num.toString();
+    // let results = [];
+    // for (let i = 0; i < string.length; i++){
+    //     results[i] = string[i] * string[i];
+    // }
+    // return Number(results.join(''));
+}
