@@ -2226,3 +2226,20 @@ function remove(s,n){
     // };
     // return s;
 }
+
+// 190-Safen User Input Part I - htmlspecialchars
+function htmlspecialchars(formData) {
+    let safeData = formData.replace(/&/g, '&amp;');
+    safeData = safeData.replace(/</g, '&lt;');
+    safeData = safeData.replace(/>/g, '&gt;');
+    safeData = safeData.replace(/"/g, '&quot;');
+    return safeData;
+    // or
+    // const dict = {
+    //     '<': '&lt;',
+    //     '>': '&gt;',
+    //     '"': '&quot;',
+    //     '&': '&amp;',
+    // };
+    // return formData.replace(/[<>"&]/g, char => dict[char]);
+}
