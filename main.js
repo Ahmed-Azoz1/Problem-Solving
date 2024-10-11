@@ -2250,3 +2250,17 @@ const isReallyNaN = (val) => {
     // or
     // return val != val
 };
+
+// 192-Fuel Calculator: Total Cost
+function fuelPrice(litres, pricePerLitre) {
+    let discount = Math.min(Math.floor(litres / 2) * 0.05, 0.25);
+    let finalPricePerLitre = pricePerLitre - discount;
+    return +(litres * finalPricePerLitre).toFixed(2);
+    // or
+    // for(let i =2;i<=10;i+=2){
+    //     if(litres >= i){
+    //         pricePerLitre -= 0.05
+    //     }
+    // }
+    // return +(litres * pricePerLitre).toFixed(2)
+}
