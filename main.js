@@ -2243,3 +2243,10 @@ function htmlspecialchars(formData) {
     // };
     // return formData.replace(/[<>"&]/g, char => dict[char]);
 }
+
+// 191-isReallyNaN
+const isReallyNaN = (val) => {
+    return Number.isNaN(val);
+    // or
+    // return val != val
+};
