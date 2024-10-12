@@ -2264,3 +2264,10 @@ function fuelPrice(litres, pricePerLitre) {
     // }
     // return +(litres * pricePerLitre).toFixed(2)
 }
+
+// 192-Get number from string
+function getNumberFromString(s) {
+    return +s.replace(/\D/g,'');
+    // or
+    // return parseInt(s.split("").filter(x => "0123456789".includes(x)).join(""));
+}
