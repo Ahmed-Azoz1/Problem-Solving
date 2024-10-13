@@ -2271,3 +2271,16 @@ function getNumberFromString(s) {
     // or
     // return parseInt(s.split("").filter(x => "0123456789".includes(x)).join(""));
 }
+
+// 193-For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
+var quote = function(fighter) {
+    return 'george saint pierre' == fighter.toLowerCase() ?
+    'I am not impressed by your performance.' : 
+    "I'd like to take this chance to apologize.. To absolutely NOBODY!";
+    // or
+    // switch(fighter.toLowerCase()) {
+    //     case 'conor mcgregor': return "I'd like to take this chance to apologize.. To absolutely NOBODY!";
+    //     case 'george saint pierre': return "I am not impressed by your performance.";
+    //     default : 'Who are you?' 
+    // }
+};
