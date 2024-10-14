@@ -2284,3 +2284,10 @@ var quote = function(fighter) {
     //     default : 'Who are you?' 
     // }
 };
+
+// 194-Generate user links
+function generateLink(user) {
+    return `http://www.codewars.com/users/${encodeURIComponent(user)}`;
+    // or
+    // return 'http://www.codewars.com/users/' + encodeURIComponent(user);
+}
