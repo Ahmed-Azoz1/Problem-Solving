@@ -2291,3 +2291,19 @@ function generateLink(user) {
     // or
     // return 'http://www.codewars.com/users/' + encodeURIComponent(user);
 }
+
+// 195-Check same case
+function sameCase(a, b){
+    if(a.toLowerCase() == a.toUpperCase() || b.toLowerCase() == b.toUpperCase()){
+        return -1;
+    }else if(a == a.toLowerCase() && b == b.toLowerCase() || a == a.toUpperCase() && b == b.toUpperCase()){
+        return 1;
+    }else{
+        return 0;
+    }
+    // or
+    // if (!/[a-zA-Z]/.test(a) || !/[a-zA-Z]/.test(b)) return -1;
+    // if ((a === a.toUpperCase() && b === b.toUpperCase()) || (a === a.toLowerCase() && b === b.toLowerCase())) {
+    //     return 1;
+    // } else return 0;
+}
