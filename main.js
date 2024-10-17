@@ -2318,3 +2318,10 @@ function rainAmount(mm){
     // or
     // return mm < 40 ? `You need to give your plant ${40 - mm}mm of water` : "Your plant has had more than enough water for today!";
 }
+
+// 197-USD => CNY
+function usdcny(usd) {
+    return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
+    // or
+    // return (usd*6.75).toFixed(2) + ' Chinese Yuan'; 
+}
