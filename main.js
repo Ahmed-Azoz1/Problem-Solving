@@ -2325,3 +2325,11 @@ function usdcny(usd) {
     // or
     // return (usd*6.75).toFixed(2) + ' Chinese Yuan'; 
 }
+
+// 198-Hex to Decimal
+function hexToDec(hexString){
+    return parseInt(hexString,16);
+    // or
+    // let decimalNumber = parseInt(hexString, 16);
+    // return decimalNumber;
+}
