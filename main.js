@@ -2333,3 +2333,22 @@ function hexToDec(hexString){
     // let decimalNumber = parseInt(hexString, 16);
     // return decimalNumber;
 }
+
+// 199-Enumerable Magic #20 - Cascading Subsets
+function eachCons(array, n) {
+    let results = [];
+    for(let i=0;i<array.length;i++){
+        let arr = [];
+        for(let j=0;j<n;j++){
+            let index = i + j;
+            if(index >= array.length){
+                return results;
+            }
+            arr.push(array[index]);
+        }
+        results.push(arr);
+    }
+	return results;
+    // or
+    // return array.map((el, i)=> array.slice(i, i+n)).filter(x => x.length === n)
+}
