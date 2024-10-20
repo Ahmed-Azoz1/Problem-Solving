@@ -2352,3 +2352,10 @@ function eachCons(array, n) {
     // or
     // return array.map((el, i)=> array.slice(i, i+n)).filter(x => x.length === n)
 }
+
+// 200-Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+    return name[0].toLowerCase() === 'r' ?  name + ' plays banjo' : name + ' does not play banjo';
+    // or
+    // return /[rR]/g.test(name[0]) ? `${name} plays banjo` : `${name} does not play banjo`;
+}
