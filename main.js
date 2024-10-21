@@ -2359,3 +2359,10 @@ function areYouPlayingBanjo(name) {
     // or
     // return /[rR]/g.test(name[0]) ? `${name} plays banjo` : `${name} does not play banjo`;
 }
+
+// 201-FIXME: Replace all dots
+var replaceDots = function(str) {
+    return str.replace(/\./g, '-');
+    // or
+    // return str.replaceAll(".", "-");
+}
