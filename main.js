@@ -2366,3 +2366,15 @@ var replaceDots = function(str) {
     // or
     // return str.replaceAll(".", "-");
 }
+
+// 202-Is there a vowel in there?
+function isVow(a){
+    return a.map((num)=>/[aeiuo]/.test(String.fromCharCode(num)) ? String.fromCharCode(num) : num);
+    // or
+    // for (let i=0, l=a.length; i<l; ++i){
+    //     let char = String.fromCharCode(a[i])
+    //     if ('aeiou'.indexOf(char) !== -1)
+    //     a[i] = char;
+    // }
+    // return a;
+}
