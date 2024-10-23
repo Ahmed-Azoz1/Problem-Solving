@@ -2378,3 +2378,10 @@ function isVow(a){
     // }
     // return a;
 }
+
+// 203-The Wide-Mouthed frog!
+function mouthSize(animal) {
+    return /alligator/i.test(animal) ? 'small' : 'wide' ;
+    // or
+    // return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
+}
