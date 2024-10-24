@@ -2385,3 +2385,11 @@ function mouthSize(animal) {
     // or
     // return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
 }
+
+// 204-Enumerable Magic - Does My List Include This?
+function include(arr, item){
+    return arr.includes(item);
+    // or
+    // let index = arr.findIndex(el => el === item);
+    // return index !== -1;
+}
