@@ -2393,3 +2393,11 @@ function include(arr, item){
     // let index = arr.findIndex(el => el === item);
     // return index !== -1;
 }
+
+// 205-Polish alphabet
+function correctPolishLetters (string) {
+    return string.replace(/[ąćęłńóśźż]/g,replacer =>`acelnoszz`['ąćęłńóśźż'.indexOf(replacer)]);
+    // or
+    // let dict = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
+    // return string.replace(/[ąćęłńóśźż]/g, match => dict[match]);
+}
