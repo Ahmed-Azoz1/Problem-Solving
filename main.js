@@ -2401,3 +2401,15 @@ function correctPolishLetters (string) {
     // let dict = {'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'};
     // return string.replace(/[ąćęłńóśźż]/g, match => dict[match]);
 }
+
+// 206-Simple multiplication
+function simpleMultiplication(number) {
+    return number % 2 === 0 ? number * 8 : number * 9;
+    // or
+    // if(value%2===0 ){
+    //     return value *8
+    // }
+    // else{
+    //     return value* 9;
+    // } 
+}
