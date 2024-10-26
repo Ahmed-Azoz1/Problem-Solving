@@ -2406,10 +2406,10 @@ function correctPolishLetters (string) {
 function simpleMultiplication(number) {
     return number % 2 === 0 ? number * 8 : number * 9;
     // or
-    // if(value%2===0 ){
-    //     return value *8
+    // if(number % 2 ===0 ){
+    //     return number * 8;
     // }
     // else{
-    //     return value* 9;
+    //     return number * 9;
     // } 
 }
