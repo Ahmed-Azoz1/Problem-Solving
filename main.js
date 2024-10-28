@@ -2430,3 +2430,18 @@ function bmi(weight, height) {
     // let bmi = weight / height**2;
     // return bmi <= 18.5 ? 'Underweight' : bmi <= 25.0 ? 'Normal' : bmi <= 30.0 ? 'Overweight' : 'Obese';
 }
+
+
+// 208-Find the position!
+function position(letter){
+    const alphabet = [
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
+        'u', 'v', 'w', 'x', 'y', 'z'
+    ];
+    let position = alphabet.indexOf(letter.toLowerCase()) +1;
+    return `Position of alphabet: ${position}`;
+    // or
+    // const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    // return 'Position of alphabet: ' + (alphabet.indexOf(letter) + 1);
+}
