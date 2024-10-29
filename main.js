@@ -2431,7 +2431,6 @@ function bmi(weight, height) {
     // return bmi <= 18.5 ? 'Underweight' : bmi <= 25.0 ? 'Normal' : bmi <= 30.0 ? 'Overweight' : 'Obese';
 }
 
-
 // 208-Find the position!
 function position(letter){
     const alphabet = [
@@ -2444,4 +2443,11 @@ function position(letter){
     // or
     // const alphabet = 'abcdefghijklmnopqrstuvwxyz';
     // return 'Position of alphabet: ' + (alphabet.indexOf(letter) + 1);
+}
+
+// 209-Grasshopper - Function syntax debugging
+function main (verb, noun){
+    return verb + noun;
+    // or
+    // return `${verb}${noun}`;
 }
