@@ -2451,3 +2451,11 @@ function main (verb, noun){
     // or
     // return `${verb}${noun}`;
 }
+
+// 210-Calculate Price Excluding VAT
+function excludingVatPrice(price){
+    return price == null ? -1 : +(price / 1.15).toFixed(2);
+    // or
+    // if (price === null) return -1
+    // return +((price / 1.15).toFixed(2));
+}
