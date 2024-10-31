@@ -2459,3 +2459,16 @@ function excludingVatPrice(price){
     // if (price === null) return -1
     // return +((price / 1.15).toFixed(2));
 }
+
+// 211-Opposites Attract
+function lovefunc(flower1, flower2){
+    if(flower1 % 2 === 0 && flower2 % 2 === 1){
+        return true;
+    }else if(flower2 % 2 === 0 && flower1 % 2 === 1){
+        return true;
+    }else{
+        return false;
+    }
+    // or
+    // return flower1 % 2 !== flower2 % 2;
+}
