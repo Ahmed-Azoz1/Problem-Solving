@@ -2472,3 +2472,15 @@ function lovefunc(flower1, flower2){
     // or
     // return flower1 % 2 !== flower2 % 2;
 }
+
+// 212-Thinkful - Number Drills: Blue and red marbles
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+    let red= redStart - redPulled;
+    let blue= blueStart - bluePulled;
+    return blue / (blue + red);
+    // or
+    // let blue = blueStart - bluePulled;
+    // let red = redStart - redPulled;
+    // let all = blue + red;
+    // return blue / all ;
+}
