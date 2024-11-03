@@ -2527,3 +2527,13 @@ function getPlanetName(id){
     //     8: 'Neptune'
     // }[id]
 }
+
+// 214-Holiday VI - Shark Pontoon
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    return sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed) > pontoonDistance / youSpeed ? `Alive!` : `Shark Bait!`; 
+    // or
+    // if(dolphin){
+    //     sharkSpeed /= 2;
+    // }
+    // return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
+}
