@@ -2537,3 +2537,10 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
     // }
     // return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
 }
+
+// 215-Function 1 - hello world
+function greet(){
+    return "hello world!";
+    // or
+    return `hello world!`;
+}
