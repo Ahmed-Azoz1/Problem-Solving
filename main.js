@@ -2542,5 +2542,12 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 function greet(){
     return "hello world!";
     // or
-    return `hello world!`;
+    // return `hello world!`;
+}
+
+// 216-Remove String Spaces
+function noSpace(x){
+    return x.replaceAll(" ","");
+    // or
+    // return x.split(' ').join('');
 }
