@@ -2551,3 +2551,14 @@ function noSpace(x){
     // or
     // return x.split(' ').join('');
 }
+
+// 217-Remove First and Last Character
+function removeChar(str){
+    return str.slice(1,-1);
+    // or
+    // let newArr = [];
+    // for(let i = 1; i < str.length - 1; i++){
+    //     newArr.push(str[i]);
+    // }
+    // return newArr.join('');
+};
