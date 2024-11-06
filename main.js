@@ -2562,3 +2562,13 @@ function removeChar(str){
     // }
     // return newArr.join('');
 };
+
+// 218-Is n divisible by x and y?
+function isDivisible(n, x, y) {
+    return n % x === 0 && n % y === 0;
+    // or
+    // if (n % x === 0 && n % y === 0) {
+    //     return true;
+    // }
+    // return false;
+}
