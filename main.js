@@ -2572,3 +2572,29 @@ function isDivisible(n, x, y) {
     // }
     // return false;
 }
+
+// 219-Never visit a . . . !?
+function SubtractSum(n){
+    const fruits = {
+        1: "kiwi",
+        2: "pear",
+        3: "kiwi",
+        4: "banana",
+        5: "melon",
+        6: "banana",
+        7: "melon",
+        8: "pineapple",
+        9: "apple"
+    };
+    function sumOfDigits(num) {
+        return num.toString().split('').map(Number).reduce((acc, digit) => acc + digit, 0);
+    }
+    while (n >= 10) {
+        let sum = sumOfDigits(n);
+        n = n - sum;
+    }
+    return fruits[n];
+    // or
+    // const digitSum = (n + '').split('').reduce((res, v) => res + +v, 0);
+    // return n - digitSum < 100 ? 'apple' : SubtractSum(n - digitSum);
+}
