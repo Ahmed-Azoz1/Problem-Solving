@@ -2598,3 +2598,10 @@ function SubtractSum(n){
     // const digitSum = (n + '').split('').reduce((res, v) => res + +v, 0);
     // return n - digitSum < 100 ? 'apple' : SubtractSum(n - digitSum);
 }
+
+// 220-Convert a Boolean to a String
+function booleanToString(b){
+    return b ? 'true' : 'false';
+    // or
+    // return b.toString();
+}
