@@ -2605,3 +2605,10 @@ function booleanToString(b){
     // or
     // return b.toString();
 }
+
+// 221-Opposite number
+function opposite(number) {
+    return number * -1;
+    // or
+    // return(-number);
+}
