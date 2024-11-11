@@ -2620,3 +2620,10 @@ function doubleInteger(i) {
     // i += i
     // return i;
 }
+
+// 223-Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+    // or
+    // return [...arguments].reduce((sum, item) => sum += item , 0)
+}
