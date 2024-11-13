@@ -2627,3 +2627,10 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     // or
     // return [...arguments].reduce((sum, item) => sum += item , 0)
 }
+
+// 224-Keep Hydrated!
+function litres(time) {
+    return Math.floor(time * .5);
+    // or
+    // return Math.floor(time / 2)
+}
