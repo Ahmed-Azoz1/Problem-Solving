@@ -2634,3 +2634,14 @@ function litres(time) {
     // or
     // return Math.floor(time / 2)
 }
+
+// 225-Reverse List Order
+function reverseList(list) {
+    return list.reverse();
+    // or
+    // let array = [];
+    // for (let i = list.length-1; i >= 0; i --){
+    //     array.push(list[i]);
+    // }
+    // return array;
+}
