@@ -2659,3 +2659,14 @@ function findDifference(a, b) {
     // or
     // return Math.abs(a.reduce((a,b)=>a*b) - b.reduce((a,b)=> a*b))
 }
+
+// 228-A Needle in the Haystack
+function findNeedle(haystack) {
+    const index = haystack.indexOf('needle');
+    return `found the needle at position ${index}`;
+    // or
+    // for (let i=0; i<array.length; i++){
+    //     if (array[i] === 'needle')
+    //         return 'found the needle at position ' + i;
+    // }
+}
