@@ -2665,8 +2665,18 @@ function findNeedle(haystack) {
     const index = haystack.indexOf('needle');
     return `found the needle at position ${index}`;
     // or
-    // for (let i=0; i<array.length; i++){
-    //     if (array[i] === 'needle')
+    // for (let i=0; i<haystack.length; i++){
+    //     if (haystack[i] === 'needle')
     //         return 'found the needle at position ' + i;
     // }
+}
+
+// 229-Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+    return Array.from(new Set(arr1.concat(arr2).sort((num1,num2) => (num1-num2))));
+    // or
+    // let merge = arr1.concat(arr2);
+    // merge = new Set(merge);
+    // merge = Array.from(merge);
+    // return merge.sort((num1,num2)=>num1 - num2);
 }
