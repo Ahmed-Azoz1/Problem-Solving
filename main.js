@@ -2680,3 +2680,22 @@ function mergeArrays(arr1, arr2) {
     // merge = Array.from(merge);
     // return merge.sort((num1,num2)=>num1 - num2);
 }
+
+// 230-Stringy Strings
+function stringy(size) {
+    let string = '';
+    for(let i = 0; i < size; i++){
+        if (i % 2 === 0){
+            string += '1';
+        }else{
+            string += '0';
+        }
+    }
+    return string;
+    // or
+    // let string = "";
+    // for(let i = 1; i<=size; i++ ){
+    //     string += i%2;
+    // }
+    // return string;
+}
