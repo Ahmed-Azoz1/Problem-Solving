@@ -2699,3 +2699,11 @@ function stringy(size) {
     // }
     // return string;
 }
+
+// 231-GrFunction Fixerasshopper - Basic 
+function addFive(num) {
+    let total = num + 5
+    return total
+    // or
+    // return num + 5;
+}
