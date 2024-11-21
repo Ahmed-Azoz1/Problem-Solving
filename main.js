@@ -2707,3 +2707,11 @@ function addFive(num) {
     // or
     // return num + 5;
 }
+
+// 232-Name Shuffler
+function nameShuffler(str){
+    return str.split(' ').reverse().join(' ');
+    // or
+    // let arr = str.split(" ");
+    // return arr[1] + ' ' + arr[0];
+}
