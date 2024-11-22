@@ -2715,3 +2715,12 @@ function nameShuffler(str){
     // let arr = str.split(" ");
     // return arr[1] + ' ' + arr[0];
 }
+
+// 233-Training JS #7: if..else and ternary operator
+function saleHotdogs(n){
+    if(n < 5) return n * 100;
+    if(n < 10) return n * 95;
+    return n * 90;
+    // or
+    // return n * (n < 5 ? 100 : n < 10 ? 95 : 90);
+}
