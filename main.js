@@ -2724,3 +2724,16 @@ function saleHotdogs(n){
     // or
     // return n * (n < 5 ? 100 : n < 10 ? 95 : 90);
 }
+
+// 234-Add Length
+function addLength(str) {
+    let words = str.split(' ');
+    let result = [];
+    for (let i = 0; i < words.length; i++) {
+        result.push(words[i] + ' ' + words[i].length);
+    }
+    return result;
+    // or
+    // return str.split(" ").map(s => `${s} ${s.length}`)
+}
+
