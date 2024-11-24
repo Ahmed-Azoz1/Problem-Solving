@@ -2737,3 +2737,14 @@ function addLength(str) {
     // return str.split(" ").map(s => `${s} ${s.length}`)
 }
 
+// 235-Sum of differences in array
+function sumOfDifferences(arr) {
+    let sorted = arr.sort((a,b)=>b-a);
+    let total = 0;
+    for (let i = 0; i < sorted.length -1; i++) {
+        total += sorted[i] - sorted[i+1];
+    }
+    return total;
+    // or
+    // return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+}
