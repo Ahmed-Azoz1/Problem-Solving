@@ -2748,3 +2748,22 @@ function sumOfDifferences(arr) {
     // or
     // return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
+
+// 236-Sum of Multiples
+function sumMul(n,m){
+    if (n>=m) return 'INVALID';
+    let total =0;
+    let index = n;
+    while(index < m){
+        total += index;
+        index += n;
+    }
+    return total;
+    // or
+    // if (n >= m) return "INVALID";
+    // let sum = 0;
+    // for (let i = n; i < m; i+=n) {
+    //     sum += i;
+    // }
+    // return sum;
+}
