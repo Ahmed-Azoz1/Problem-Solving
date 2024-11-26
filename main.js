@@ -2767,3 +2767,14 @@ function sumMul(n,m){
     // }
     // return sum;
 }
+
+// 237-Unfinished Loop - Bug Fixing #1
+function createArray(number){
+    let newArray = [];
+    for(let counter = 1; counter <= number; counter++){
+        newArray.push(counter);
+    }
+    return newArray;
+    // or
+    // return Array.from({length:number},(_,index)=> index +1);
+}
