@@ -2778,3 +2778,14 @@ function createArray(number){
     // or
     // return Array.from({length:number},(_,index)=> index +1);
 }
+
+// 238-Name on billboard
+function billboard(name, price = 30){
+    let total = 0;
+    for(let _ of name){
+        total += price;
+    }
+    return total;
+    // or
+    // return name.split('').reduce((sum, letter) => sum + price, 0); 
+} 
