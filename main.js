@@ -2788,4 +2788,17 @@ function billboard(name, price = 30){
     return total;
     // or
     // return name.split('').reduce((sum, letter) => sum + price, 0); 
-} 
+}
+
+// 239-Color Ghost
+const Ghost = function() {
+    this.color = ['white','yellow','red','purple'][Math.floor(Math.random() * 4)]
+    // or
+
+};
+// or
+// function Ghost() {
+//     return {
+//       color: ["white", "yellow", "purple", "red"][Math.floor((Math.random() * 4))]
+//     }
+// }
