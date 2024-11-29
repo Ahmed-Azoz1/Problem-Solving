@@ -2793,8 +2793,6 @@ function billboard(name, price = 30){
 // 239-Color Ghost
 const Ghost = function() {
     this.color = ['white','yellow','red','purple'][Math.floor(Math.random() * 4)]
-    // or
-
 };
 // or
 // function Ghost() {
@@ -2802,3 +2800,12 @@ const Ghost = function() {
 //       color: ["white", "yellow", "purple", "red"][Math.floor((Math.random() * 4))]
 //     }
 // }
+
+// 240-Closest elevator
+function elevator(left, right, call){
+    return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right';
+    // or
+    // const leftDist = Math.abs(left - call)
+    // const rightDist = Math.abs(right - call)
+    // return leftDist >= rightDist ? 'right' : 'left';
+}
