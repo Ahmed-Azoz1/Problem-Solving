@@ -2809,3 +2809,12 @@ function elevator(left, right, call){
     // const rightDist = Math.abs(right - call)
     // return leftDist >= rightDist ? 'right' : 'left';
 }
+
+// 241-Smallest unused ID
+function nextId(ids){
+    return ids.sort((a,b)=>a-b).reduce((prev,curr)=>prev + (prev==curr),0);
+    // or
+    // let x = 0;
+    // while (ids.includes(x)) x++;
+    // return x;
+}
