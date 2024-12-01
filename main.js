@@ -2818,3 +2818,14 @@ function nextId(ids){
     // while (ids.includes(x)) x++;
     // return x;
 }
+
+// 242-Classy Extentions
+class Cat extends Animal {
+    speak(){
+        return this.name + ' meows.';
+    }
+    // or
+    // speak() {
+    //     return `${this.name} meows.`;
+    // }
+}
