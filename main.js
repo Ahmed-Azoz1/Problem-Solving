@@ -2829,3 +2829,34 @@ class Cat extends Animal {
     //     return `${this.name} meows.`;
     // }
 }
+
+// 243-Switch/Case - Bug Fixing #6
+function evalObject(value){
+    let result = 0;
+    switch(value.operation){
+        case'+': return result = value.a + value.b;
+        case'-': return result = value.a - value.b;
+        case'/': return result = value.a / value.b;
+        case'*': return result = value.a * value.b;
+        case'%': return result = value.a % value.b;
+        case'^': return result = Math.pow(value.a, value.b);
+    }
+    return result;
+    // or
+    // let result = 0;
+    // switch(value.operation){
+    //     case'+': result = value.a + value.b;
+    //         break;
+    //     case'-': result = value.a - value.b;
+    //         break;
+    //     case'/': result = value.a / value.b;
+    //         break;
+    //     case'*': result = value.a * value.b;
+    //         break;
+    //     case'%': result = value.a % value.b;
+    //         break;
+    //     case'^': result = Math.pow(value.a, value.b);
+    //         break;
+    // }
+    // return result;
+}
