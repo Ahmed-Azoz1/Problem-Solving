@@ -2860,3 +2860,12 @@ function evalObject(value){
     // }
     // return result;
 }
+
+// 244-Is your period late?
+function periodIsLate(last, today, cycleLength) {
+    const differenceInTime = today - last;
+    const differenceInDays = differenceInTime / (1000 * 3600 * 24);
+    return differenceInDays > cycleLength;
+    // or
+    // return (today-last)/86400000>cycleLength;
+}
