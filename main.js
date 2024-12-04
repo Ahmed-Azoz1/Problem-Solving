@@ -2869,3 +2869,10 @@ function periodIsLate(last, today, cycleLength) {
     // or
     // return (today-last)/86400000>cycleLength;
 }
+
+// 245-Get Nth Even Number
+function nthEven(n){
+    return n * 2-2;
+    // or
+    // return (n-1)*2;
+}
