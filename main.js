@@ -2888,3 +2888,17 @@ function uefaEuro2016(teams, scores){
     // or
     // return `At match ${teams[0]} - ${teams[1]}, ${scores[0] === scores[1] ? `teams played draw.` : `${scores[0] > scores[1] ? teams[0] : teams[1]} won!`}`;
 }
+
+// 247-Did she say hallo?
+function validateHello(greetings) {
+    return /hello|ciao|salut|hallo|hola|ahoj|czesc/i.test(greetings);
+    // or
+    // const messages = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
+    // const lowerCaseGreetings = greetings.toLowerCase();
+    // for (let i = 0; i < messages.length; i++) {
+    //     if (lowerCaseGreetings.includes(messages[i])) {
+    //     return true;
+    //     }
+    // }
+    // return false;
+}
