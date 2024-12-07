@@ -2902,3 +2902,10 @@ function validateHello(greetings) {
     // }
     // return false;
 }
+
+// 248-Is it a number?
+function isDigit(s) {
+    return s == parseFloat(s);
+    // or
+    // return parseFloat(s) === Number(s);
+}
