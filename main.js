@@ -2928,3 +2928,26 @@ function logicalCalc(array, op){
     // or
     // return !!array.reduce((prev,curr)=>op == 'AND'?prev && curr:op == 'OR' ? prev || curr : prev ^ curr);
 }
+
+// 250-Playing with cubes II
+class Cube {
+    constructor(side=0){
+        this.side = Math.abs(side);
+    }
+    getSide() {
+        return this.side; 
+    }
+    setSide(n) {
+        this.side = Math.abs(n);
+    }
+    // or
+    // constructor(side) {
+    //     this.setSide(side)
+    // }
+    // getSide() {
+    //     return this.side
+    // }
+    // setSide(n) {
+    //     this.side = n ? Math.abs(n) : 0
+    // }
+}
