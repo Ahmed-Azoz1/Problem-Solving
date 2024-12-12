@@ -3006,3 +3006,15 @@ Counter.prototype.reset = function() {
 //         this.value = 0;
 //     };
 // }
+
+// 253-Enumerable Magic #4 - True for None?
+function none(arr, fun){
+    return !arr.some(fun);
+    // or
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (fun(arr[i]) == true) {
+    //         return false;
+    //     }
+    // }
+    // return true;
+}
