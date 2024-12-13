@@ -3018,3 +3018,15 @@ function none(arr, fun){
     // }
     // return true;
 }
+
+// 254-Job Matching #1
+function match(candidate, job) {
+    if(!candidate.minSalary || !job.maxSalary){
+        throw error;
+    }else{
+        return candidate.minSalary * .9 <= job.maxSalary;
+    }
+    // or
+    // if (!job.maxSalary || !candidate.minSalary) throw TypeError('Missing salary');
+    // return job.maxSalary >= (candidate.minSalary * .9);
+}
