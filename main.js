@@ -3030,3 +3030,13 @@ function match(candidate, job) {
     // if (!job.maxSalary || !candidate.minSalary) throw TypeError('Missing salary');
     // return job.maxSalary >= (candidate.minSalary * .9);
 }
+
+// 255-Return Two Highest Values in List
+function twoHighest(arr) {
+    let unique = [...new Set(arr)];
+    let sorted = unique.sort((a, b) => (a - b) * -1);
+    if(sorted.length <= 2) return sorted;
+    return sorted.slice(0, 2);
+    // or
+    // return [...new Set(arr)].sort((a, b) => b - a).slice(0, 2)
+}
