@@ -3040,3 +3040,15 @@ function twoHighest(arr) {
     // or
     // return [...new Set(arr)].sort((a, b) => b - a).slice(0, 2)
 }
+
+// 256-Hello, Name or World!
+function hello(name) {
+    if(!name){
+        return 'Hello, World!';
+    }else{
+        return `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!`;
+    }
+    // or
+    // return `Hello, ${name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
+
+}
