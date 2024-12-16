@@ -3050,5 +3050,33 @@ function hello(name) {
     }
     // or
     // return `Hello, ${name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
+}
 
+// 257-Student's Final Grade
+function finalGrade (exam, projects) {
+    if(exam > 90 || projects > 10){
+        return 100;
+    }else if(exam > 75 && projects >= 5){
+        return 90;
+    }else if(exam > 50 && projects >= 2){
+        return 75;
+    }else{
+        return 0;
+    }
+    // or
+    // let score = 0;
+    // switch (true) {
+    //     case (exam > 90 || projects > 10):
+    //         score = 100;
+    //         break;
+    //     case (exam > 75 && projects >= 5):
+    //         score = 90;
+    //         break;
+    //     case (exam > 50 && projects >= 2):
+    //         score = 75;
+    //         break;
+    //     default:
+    //         score = 0;
+    // }
+    // return score;
 }
