@@ -3080,3 +3080,10 @@ function finalGrade (exam, projects) {
     // }
     // return score;
 }
+
+// 258-Plural
+function plural(n) {
+    return n !=1;
+    // or
+    // return n === 1 ? false : true;
+}
