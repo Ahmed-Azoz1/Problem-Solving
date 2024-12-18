@@ -3087,3 +3087,16 @@ function plural(n) {
     // or
     // return n === 1 ? false : true;
 }
+
+// 259-Grasshopper - Terminal Game Turn Function
+function doTurn () {
+    rollDice();
+    move();
+    combat();
+    getCoins();
+    buyHealth();
+    printStatus();
+    // or
+    // let actions = [rollDice, move, combat, getCoins, buyHealth, printStatus];
+    // actions.forEach(e => e());
+}
