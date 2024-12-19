@@ -3100,3 +3100,18 @@ function doTurn () {
     // let actions = [rollDice, move, combat, getCoins, buyHealth, printStatus];
     // actions.forEach(e => e());
 }
+
+// 260-pick a set of first elements
+function first(arr, n) {
+    return n == undefined ? arr.slice(0,1) : arr.slice(0,n);
+    // or
+    // const finalArr = [];
+    // if(n === undefined){
+    //     finalArr[0] = arr[0];
+    // }else{ 
+    //     for(let i = 0; i < n && i < arr.length; i++){
+    //         finalArr.push(arr[i]);
+    //     }
+    // }
+    // return finalArr;
+}
