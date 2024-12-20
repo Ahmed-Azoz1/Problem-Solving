@@ -3115,3 +3115,14 @@ function first(arr, n) {
     // }
     // return finalArr;
 }
+
+// 261-Grasshopper - Array Mean
+function findAverage(nums) {
+    return nums.reduce((prev, curr) => prev + curr) / nums.length;
+    // or
+    // let sum = 0;
+    // for (num in nums) {
+    //     sum += nums[num];
+    // }
+    // return sum / (nums.length);
+}
