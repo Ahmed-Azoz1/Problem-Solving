@@ -3126,3 +3126,10 @@ function findAverage(nums) {
     // }
     // return sum / (nums.length);
 }
+
+// 262-Parse float
+function parseF(s) {
+    return /\d/.test(s) ? +s :null;
+    // or
+    // return parseFloat(s) == +s ? parseFloat(s) : null;
+}
