@@ -3133,3 +3133,10 @@ function parseF(s) {
     // or
     // return parseFloat(s) == +s ? parseFloat(s) : null;
 }
+
+// 263-Add new item (collections are passed by reference)
+function addExtra( listOfNumbers ){
+    return listOfNumbers.concat(['codeManS']);
+    // or
+    // return listOfNumbers.concat(0)
+}
