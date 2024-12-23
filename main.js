@@ -3140,3 +3140,11 @@ function addExtra( listOfNumbers ){
     // or
     // return listOfNumbers.concat(0)
 }
+
+// 264-No zeros for heros
+function noBoringZeros(n) {
+    return +`${n}`.replace(/0+$/,'');
+    // or
+    // while(n%10==0 && n!=0){n/=10;}
+    // return n;
+}
