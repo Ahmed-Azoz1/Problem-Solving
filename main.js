@@ -3148,3 +3148,14 @@ function noBoringZeros(n) {
     // while(n%10==0 && n!=0){n/=10;}
     // return n;
 }
+
+// 265-Age Range Compatibility Equation
+function datingRange(age){
+    const lowerBound = Math.floor(age - 0.10 * age);
+    const upperBound = Math.floor(age + 0.10 * age);
+    const lowerMatch = Math.floor(age / 2 + 7);
+    const upperMatch = Math.floor((age - 7) * 2);
+    return age <= 14 ? `${lowerBound}-${upperBound}` : `${lowerMatch}-${upperMatch}`;
+    // or
+    // return age <= 14 ? `${Math.floor(age - 0.10 * age)}-${Math.floor(age + 0.10 * age)}` : `${Math.floor(age/2 + 7)}-${Math.floor((age-7) * 2)}`;
+}
