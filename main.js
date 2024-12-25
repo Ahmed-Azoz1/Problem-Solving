@@ -3159,3 +3159,10 @@ function datingRange(age){
     // or
     // return age <= 14 ? `${Math.floor(age - 0.10 * age)}-${Math.floor(age + 0.10 * age)}` : `${Math.floor(age/2 + 7)}-${Math.floor((age-7) * 2)}`;
 }
+
+// 266-NBA full 48 minutes average
+function pointsPer48(ppg, mpg) {
+    return (ppg && mpg) ? parseFloat(((ppg * 48) / mpg).toFixed(1)) : 0;
+    // or
+    // return +(ppg * 48 /mpg).toFixed(1) || 0;
+}
