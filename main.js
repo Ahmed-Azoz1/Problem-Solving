@@ -3166,3 +3166,22 @@ function pointsPer48(ppg, mpg) {
     // or
     // return +(ppg * 48 /mpg).toFixed(1) || 0;
 }
+
+// 267-simple calculator
+function calculator(a,b,sign){
+    if ((typeof a === "number") && (typeof b === "number")) {
+        switch (sign) {
+        case "+":
+            return a + b;
+        case "-":
+            return a - b;
+        case "*":
+            return a * b;
+        case "/":
+            return a / b;
+        }
+    }
+    return "unknown value";
+    // or
+    // return typeof a == 'number' && typeof b == 'number' && ['+','-','*','/'].includes(sign) ? sign == '+' ? a + b : sign == '-' ? a - b : sign == '*' ? a * b : a / b : 'unknown value';
+}
