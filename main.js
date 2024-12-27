@@ -3185,3 +3185,14 @@ function calculator(a,b,sign){
     // or
     // return typeof a == 'number' && typeof b == 'number' && ['+','-','*','/'].includes(sign) ? sign == '+' ? a + b : sign == '-' ? a - b : sign == '*' ? a * b : a / b : 'unknown value';
 }
+
+// 268-ASCII Total
+function uniTotal (string) {
+    return string.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    // or
+    // let count = 0;
+    // for (let i = 0; i < string.length; i++) {
+    //     count += string.charCodeAt(i);
+    // }
+    // return count;
+}
