@@ -3196,3 +3196,10 @@ function uniTotal (string) {
     // }
     // return count;
 }
+
+// 269-Are there any arrows left?
+function anyArrows(arrows){
+    return arrows.some( element => !element.damaged);
+    // or
+    // return arrows.some(element => element.damaged ? false: true)
+}
