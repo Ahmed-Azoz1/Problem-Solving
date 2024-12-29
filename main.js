@@ -3203,3 +3203,13 @@ function anyArrows(arrows){
     // or
     // return arrows.some(element => element.damaged ? false: true)
 }
+
+// 270-Enumerable Magic #2 - True for Any?
+function any(arr, fun){
+    return arr.some(fun);
+    // or
+    // for (let i=0; i<arr.length; ++i)
+    //     if (fun(arr[i]))
+    //         return true;
+    // return false;
+}
