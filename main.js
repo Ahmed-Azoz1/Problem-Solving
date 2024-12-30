@@ -3213,3 +3213,15 @@ function any(arr, fun){
     //         return true;
     // return false;
 }
+
+// 271-Simple Fun #261: Whose Move
+function whoseMove(lastPlayer, win) {
+    if (win) {
+        return lastPlayer; 
+    } else {
+        return lastPlayer === "black" ? "white" : "black";
+    }
+    // or
+    // const opp = lastPlayer === 'black' ? 'white' : 'black';
+    // return  win ? lastPlayer : opp;
+}
