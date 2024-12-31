@@ -3225,3 +3225,17 @@ function whoseMove(lastPlayer, win) {
     // const opp = lastPlayer === 'black' ? 'white' : 'black';
     // return  win ? lastPlayer : opp;
 }
+
+// 272-Compare within margin
+function closeCompare(a, b, margin){
+    if(margin === undefined) margin = 0;
+    if(Math.abs(a - b) <= margin){
+        return 0;
+    }
+    return a < b ? -1 : 1;
+    // or
+    // if(a == b || Math.abs(a - b) <= margin){
+	// 	return 0
+	// }
+	// return a > b ? 1 : -1;
+}
