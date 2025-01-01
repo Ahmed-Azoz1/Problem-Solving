@@ -3239,3 +3239,18 @@ function closeCompare(a, b, margin){
 	// }
 	// return a > b ? 1 : -1;
 }
+
+// 273-Classy Classes
+class Person {
+    constructor(name,age) {
+        this.info = `${name}s age is ${age}`;
+    }
+    // or
+    // constructor(name,age) {
+    //     this.name = name;
+    //     this.age  = age;
+    // }
+    // get info() {
+    //     return this.name + "s age is " +this.age
+    // }
+}
