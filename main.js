@@ -3254,3 +3254,23 @@ class Person {
     //     return this.name + "s age is " +this.age
     // }
 }
+
+// 274-OOP: Object Oriented Piracy
+class Ship {
+    constructor(draft, crew) {
+        this.draft = draft
+        this.crew = crew
+    }
+    isWorthIt() {
+        return this.draft - this.crew * 1.5 > 20
+    }
+    // or
+    // constructor(draft, crew) {
+    //     this.draft = draft
+    //     this.crew = crew
+    // }
+    // isWorthIt(){
+    //     let crewWgt = this.crew * 1.5
+    //     return this.draft - crewWgt > 20
+    // }
+}
