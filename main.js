@@ -3274,3 +3274,10 @@ class Ship {
     //     return this.draft - crewWgt > 20
     // }
 }
+
+// 275-BASIC: Making Six Toast.
+function sixToast(num) {
+    return Math.abs(num - 6);
+    // or
+    // return num >= 6 ? num - 6 : num;
+}
