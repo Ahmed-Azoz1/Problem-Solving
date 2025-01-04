@@ -3281,3 +3281,18 @@ function sixToast(num) {
     // or
     // return num >= 6 ? num - 6 : num;
 }
+
+// 276-SpeedCode #2 - Array Madness
+function arrayMadness(a, b) {
+    return a.reduce((acc, num) => acc + num ** 2, 0) > b.reduce((acc, num) => acc + num ** 3, 0);
+    // or
+    // let sum1=0;
+    // let sum2=0;
+    // for (let n of a) {
+    //     sum1 += n*n;
+    // }
+    // for (let n of b) {
+    //     sum2 += n*n*n;
+    // }
+    // return (sum1 > sum2);
+}
