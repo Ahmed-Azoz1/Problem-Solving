@@ -3296,3 +3296,15 @@ function arrayMadness(a, b) {
     // }
     // return (sum1 > sum2);
 }
+
+// 277-Evil or Odious
+function evil(n) {
+    return n.toString(2).replace(/0/g,'').length % 2 ? 'It\'s Odious!' : 'It\'s Evil!';
+    // or
+    // let count = 0
+    // while (n > 0) {
+    //     n &= (n - 1)
+    //     count++
+    // }
+    // return (count % 2 == 0) ? "It's Evil!" : "It's Odious!";
+}
