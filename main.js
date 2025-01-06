@@ -3308,3 +3308,10 @@ function evil(n) {
     // }
     // return (count % 2 == 0) ? "It's Evil!" : "It's Odious!";
 }
+
+// 278-get ascii value of character
+function getASCII(c){
+    return c.charCodeAt(0);
+    // or
+    // return [...c].map(char => char.charCodeAt()).reduce((curr, prev) => prev + curr)
+}
