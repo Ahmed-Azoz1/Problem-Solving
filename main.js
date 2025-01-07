@@ -3315,3 +3315,15 @@ function getASCII(c){
     // or
     // return [...c].map(char => char.charCodeAt()).reduce((curr, prev) => prev + curr)
 }
+
+// 279-Find the sum of the roots of a quadratic equation
+function roots(a,b,c){
+    let discriminant = b * b - 4 * a * c;
+    if (discriminant < 0) {
+        return null;
+    }
+    let sumOfRoots = -b / a;
+    return +sumOfRoots.toFixed(2);
+    // or
+    // return b ** 2 - 4 * a * c < 0 ? null : -(b / a).toFixed(2)
+} 
