@@ -3327,3 +3327,12 @@ function roots(a,b,c){
     // or
     // return b ** 2 - 4 * a * c < 0 ? null : -(b / a).toFixed(2)
 } 
+
+// 280-Sort and Star
+function twoSort(s) {
+    s.sort();
+    let first = s[0];
+    return first.split('').join('***');
+    // or
+    // return s.sort()[0].split('').join('***');
+}
