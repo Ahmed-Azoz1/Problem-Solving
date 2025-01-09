@@ -3336,3 +3336,12 @@ function twoSort(s) {
     // or
     // return s.sort()[0].split('').join('***');
 }
+
+// 281-Take the Derivative
+function derive(coefficient,exponent) {
+    return `${coefficient * exponent}x^${exponent - 1}`;
+    // or
+    const product = coefficient * exponent;
+    const newExponent = exponent - 1;
+    return `${product}x^${newExponent}`;
+}
