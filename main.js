@@ -3341,7 +3341,15 @@ function twoSort(s) {
 function derive(coefficient,exponent) {
     return `${coefficient * exponent}x^${exponent - 1}`;
     // or
-    const product = coefficient * exponent;
-    const newExponent = exponent - 1;
-    return `${product}x^${newExponent}`;
+    // const product = coefficient * exponent;
+    // const newExponent = exponent - 1;
+    // return `${product}x^${newExponent}`;
+}
+
+// 282-Training JS #5: Basic data types--Object
+function animal(obj){
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+    // or
+    // let {color,name,legs} = obj;
+    // return `This ${color} ${name} has ${legs} legs.`;
 }
