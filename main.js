@@ -3353,3 +3353,16 @@ function animal(obj){
     // let {color,name,legs} = obj;
     // return `This ${color} ${name} has ${legs} legs.`;
 }
+
+// 283-Localize The Barycenter of a Triangle
+function barTriang(p1, p2, p3) {
+    let xO = (p1[0] + p2[0] + p3[0]) / 3;
+    let yO = (p1[1] + p2[1] + p3[1]) / 3;
+    return [parseFloat(xO.toFixed(4)), parseFloat(yO.toFixed(4))];
+    // or
+    // let x = (p1[0] + p2[0] + p3[0]) / 3;
+    // let y = (p1[1] + p2[1] + p3[1]) / 3;
+    // x = x.toFixed(4);
+    // y = y.toFixed(4);
+    // return [Number(x), Number(y)];
+}
