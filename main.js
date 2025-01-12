@@ -3366,3 +3366,11 @@ function barTriang(p1, p2, p3) {
     // y = y.toFixed(4);
     // return [Number(x), Number(y)];
 }
+
+// 284-Invalid Login - Bug Fixing #11
+function validate(username, password){
+    return password.indexOf("||") > -1 || password.indexOf('//') > -1 ? "Wrong username or password!" : new Database().login(username, password);
+    // or
+    // let database = new Database();
+    // return database.login(username, encodeURI(password));
+}
