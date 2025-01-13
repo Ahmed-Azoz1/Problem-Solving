@@ -3374,3 +3374,13 @@ function validate(username, password){
     // let database = new Database();
     // return database.login(username, encodeURI(password));
 }
+
+// 285-Remove First and Last Character Part Two
+function array(string) {
+    let nums = string.split(',');
+    let str = nums.slice(1,nums.length - 1).join(' ');
+    if (str === '') return null;
+    return str;
+    // or
+    // return string.split(",").slice(1,-1).join(" ") || null;
+}
