@@ -3384,3 +3384,12 @@ function array(string) {
     // or
     // return string.split(",").slice(1,-1).join(" ") || null;
 }
+
+// 286-Simple Fun #1: Seats in Theater
+function seatsInTheater(nCols, nRows, col, row) {
+    return (nCols - col + 1) * (nRows - row);
+    // or
+    // let totalObstructedRows = nRows - row;
+    // let totalObstructedCols = nCols - (col - 1);
+    // return totalObstructedRows * totalObstructedCols;
+}
