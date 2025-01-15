@@ -3400,3 +3400,13 @@ const ArrowFunc = function(arr) {
     // or
     // return String.fromCharCode(...arr)
 }
+
+// 288-Online RPG: player to qualifying stage?
+function playerRankUp (points) {
+    return points > 99 ? 'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.' : false;
+    // or
+    // if (points < 100) {
+    //     return false;
+    // }
+    // return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.";
+}
