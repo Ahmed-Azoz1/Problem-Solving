@@ -3393,3 +3393,10 @@ function seatsInTheater(nCols, nRows, col, row) {
     // let totalObstructedCols = nCols - (col - 1);
     // return totalObstructedRows * totalObstructedCols;
 }
+
+// 287-Take an Arrow to the knee, Functionally
+const ArrowFunc = function(arr) {
+    return arr.map(ele => String.fromCharCode(ele)).join(''); //Complete this function
+    // or
+    // return String.fromCharCode(...arr)
+}
