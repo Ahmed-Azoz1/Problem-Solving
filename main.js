@@ -3410,3 +3410,14 @@ function playerRankUp (points) {
     // }
     // return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.";
 }
+
+// 289-Alan Partridge II - Apple Turnover
+function apple(x){
+    if (x * x > 1000) {
+        return "It's hotter than the sun!!";
+    } else {
+        return "Help yourself to a honeycomb Yorkie for the glovebox.";
+    }
+    // or
+    // return x * x > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
+}
