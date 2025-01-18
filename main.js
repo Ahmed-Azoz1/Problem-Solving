@@ -3421,3 +3421,10 @@ function apple(x){
     // or
     // return x * x > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
 }
+
+// 290-Bin to Decimal
+function binToDec(bin) {
+    return parseInt(bin, 2);
+    // or
+    // return +`0b${bin}`
+}
