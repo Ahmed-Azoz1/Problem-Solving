@@ -3437,3 +3437,10 @@ function gooseFilter (birds) {
     // let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     // return birds.filter( bird => geese.indexOf(bird) < 0 );
 };
+
+// 292-Regular Ball Super Ball
+const Ball = function(ballType) {
+    this.ballType = ballType || 'regular';
+    // or
+    // this.ballType = typeof ballType !== 'undefined' ? ballType : 'regular';
+};
