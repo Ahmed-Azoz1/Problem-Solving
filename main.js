@@ -3444,3 +3444,11 @@ const Ball = function(ballType) {
     // or
     // this.ballType = typeof ballType !== 'undefined' ? ballType : 'regular';
 };
+
+// 293-Return to Sanity
+function mystery() {
+    let results = {sanity: 'Hello'};
+    return results;
+    // or
+    // return {sanity: 'Hello'};
+}
