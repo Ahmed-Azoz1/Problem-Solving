@@ -3452,3 +3452,10 @@ function mystery() {
     // or
     // return {sanity: 'Hello'};
 }
+
+// 294-String Templates - Bug Fixing #5
+function buildString(...template){
+    return `I like ${template.join(', ')}!`;
+    // or
+    // return 'I like '+template.join(', ')+"!";
+}
