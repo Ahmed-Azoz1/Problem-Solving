@@ -3459,3 +3459,10 @@ function buildString(...template){
     // or
     // return 'I like '+template.join(', ')+"!";
 }
+
+// 295-Who ate the cookie?
+function cookie(x){
+    return typeof x === 'string' ? 'Who ate the last cookie? It was Zach!' : typeof x === 'number' ? 'Who ate the last cookie? It was Monica!' : 'Who ate the last cookie? It was the dog!';
+    // or
+    // return `Who ate the last cookie? It was ${({string: "Zach", number: "Monica"}[typeof x] || "the dog")}!`;
+}
