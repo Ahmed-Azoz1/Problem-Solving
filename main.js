@@ -3466,3 +3466,10 @@ function cookie(x){
     // or
     // return `Who ate the last cookie? It was ${({string: "Zach", number: "Monica"}[typeof x] || "the dog")}!`;
 }
+
+// 296-Find the Integral
+function integrate(coefficient, exponent) {
+    return `${coefficient / (exponent + 1)}x^${exponent + 1}`;
+    // or
+    // return coefficient / (exponent + 1) + "x^" + (exponent + 1);
+}
