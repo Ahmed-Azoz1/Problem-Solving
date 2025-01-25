@@ -3473,3 +3473,13 @@ function integrate(coefficient, exponent) {
     // or
     // return coefficient / (exponent + 1) + "x^" + (exponent + 1);
 }
+
+// 297-To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+    return array.map(num => Math.sqrt(num) % 1 === 0 ? Math.sqrt(num) : num * num);
+    // or
+    // return array.map(x => {
+    //     const r = Math.sqrt(x);
+    //     return (r % 1 == 0) ? r : (x*x);
+    // });
+}
