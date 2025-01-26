@@ -3483,3 +3483,13 @@ function squareOrSquareRoot(array) {
     //     return (r % 1 == 0) ? r : (x*x);
     // });
 }
+
+// 298-Who is going to pay for the wall?
+function whoIsPaying(name) {
+    if (name.length <= 2) {
+        return [name];
+    }
+    return [name, name.slice(0, 2)];
+    // or
+    // return name.length <= 2 ? [name] : [name, name.slice(0, 2)];
+}
