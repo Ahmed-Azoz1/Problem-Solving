@@ -3504,3 +3504,14 @@ function multiTable(number) {
     // or
     // return [...Array(10).keys()].map(i => `${i + 1} * ${number} = ${(i + 1) * number}`).join('\n');
 }
+
+// 300-How many lightsabers do you own?
+function howManyLightsabersDoYouOwn(name) {
+    return name === "Zach" ? 18 : 0;
+    // or
+    // if (name === "Zach"){
+    //     return 18;
+    // } else {
+    //     return 0;
+    // }
+}
