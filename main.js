@@ -3539,3 +3539,11 @@ function dutyFree(normPrice, discount, hol){
     //     return 0;
     // }
 }
+
+// 303-Capitalization and Mutability
+function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1);
+    // or
+    // const first = word[0].toUpperCase()
+    // return first + word.slice(1)
+}
