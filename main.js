@@ -3547,3 +3547,10 @@ function capitalizeWord(word) {
     // const first = word[0].toUpperCase()
     // return first + word.slice(1)
 }
+
+// 304-Are arrow functions odd?
+function odds(values){
+    return values.filter(x => x % 2 !== 0);
+    // or
+    // return values.filter(x => x % 2);
+}
