@@ -3554,3 +3554,18 @@ function odds(values){
     // or
     // return values.filter(x => x % 2);
 }
+
+// 305-Be Concise I - The Ternary Operator
+function describeAge(age) {
+    return "You're a(n) " + (age <= 12 ? "kid" : age <= 17 ? "teenager" : age <= 64 ? "adult" : "elderly");
+    // or
+    // if (age <= 12) {
+    //     return "You're a(n) kid";
+    // } else if (age >= 13 && age <= 17) {
+    //     return "You're a(n) teenager";
+    // } else if (age >= 18 && age <= 64) {
+    //     return "You're a(n) adult";
+    // } else {
+    //     return "You're a(n) elderly";
+    // }
+}
