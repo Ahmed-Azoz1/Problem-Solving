@@ -3569,3 +3569,16 @@ function describeAge(age) {
     //     return "You're a(n) elderly";
     // }
 }
+
+// 306-Find the first non-consecutive number
+function firstNonConsecutive (arr) {
+    let result = arr.find((val, index) => val !== index + arr[0]);
+    return (Number.isInteger(result)) ? result : null;
+    // or
+    // for (let i = 1; i < arr.length; i++) {
+    //     if (arr[i] - arr[i - 1] !== 1) {
+    //         return arr[i];
+    //     }
+    // }
+    // return null;
+}
