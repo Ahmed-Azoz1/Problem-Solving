@@ -3582,3 +3582,10 @@ function firstNonConsecutive (arr) {
     // }
     // return null;
 }
+
+// 307-L1: Set Alarm
+function setAlarm(employed, vacation){
+    return employed && !vacation;
+    // or
+    // return (employed && !vacation) ? true : false;
+}
