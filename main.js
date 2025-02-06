@@ -3589,3 +3589,14 @@ function setAlarm(employed, vacation){
     // or
     // return (employed && !vacation) ? true : false;
 }
+
+// 308-Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+    return base % factor === 0;
+    // or
+    // let check = base % factor
+    // if(check == 0){
+    //     return true
+    // }
+    // return false
+}
