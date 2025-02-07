@@ -3607,3 +3607,10 @@ function past(h, m, s){
     // or
     // return h *3600000 + m * 60000 + s * 1000;
 }
+
+// 310-Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - 2 * sonYearsOld);
+    // or
+    // return Math.abs(2 * sonYearsOld - dadYearsOld);
+}
