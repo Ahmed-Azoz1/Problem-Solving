@@ -3614,3 +3614,14 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
     // or
     // return Math.abs(2 * sonYearsOld - dadYearsOld);
 }
+
+// 311-Area or Perimeter
+const areaOrPerimeter = function(l , w) {
+    return l === w ? l * w : 2 * l + w * 2;
+    // or
+    // if(l === w){
+    //     return l * w;
+    // }else{
+    //     return 2 * l + w * 2;
+    // }
+};
