@@ -3625,3 +3625,12 @@ const areaOrPerimeter = function(l , w) {
     //     return 2 * l + w * 2;
     // }
 };
+
+// 312-Jenny's secret message
+function greet(name){
+    if(name === "Johnny")
+        return "Hello, my love!";
+    return "Hello, " + name + "!";
+    // or
+    // return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!";
+}
