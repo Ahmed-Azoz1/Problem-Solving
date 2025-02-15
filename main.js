@@ -3651,3 +3651,10 @@ function pickIt(arr){
     // for (let num of arr) num & 1 ? odd.push(num) : even.push(num);
     // return [odd,even];
 }
+
+// 314-Grasshopper - Personalized Message
+function greet (name, owner) {
+    return 'Hello ' + (name == owner ? 'boss' : 'guest');
+    // or
+    // return name === owner ? 'Hello boss' : 'Hello guest';
+}
