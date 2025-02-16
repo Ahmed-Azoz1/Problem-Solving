@@ -3658,3 +3658,14 @@ function greet (name, owner) {
     // or
     // return name === owner ? 'Hello boss' : 'Hello guest';
 }
+
+// 315-Triple Trouble
+function tripleTrouble(one, two, three){
+    let result = '';
+    for (let i = 0; i < one.length; i++) {
+        result += one[i] + two[i] + three[i];
+    }
+    return result;
+    // or
+    // return one.split('').map((l, p)=>one[p]+two[p]+three[p]).join('');
+}
