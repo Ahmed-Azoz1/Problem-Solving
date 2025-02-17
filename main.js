@@ -3669,3 +3669,13 @@ function tripleTrouble(one, two, three){
     // or
     // return one.split('').map((l, p)=>one[p]+two[p]+three[p]).join('');
 }
+
+// 316-Quarter of the year
+const quarterOf = (month) => {
+    return Math.ceil(month  / 3);
+    // or
+    // if(month <= 3) return 1;
+    // if(month <= 6) return 2;
+    // if(month <= 9) return 3;
+    // if(month <= 12) return 4;
+}
