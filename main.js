@@ -3679,3 +3679,15 @@ const quarterOf = (month) => {
     // if(month <= 9) return 3;
     // if(month <= 12) return 4;
 }
+
+// 317-Collatz Conjecture (3n+1)
+const hotpo = function(n){
+    return n < 2 ? 0 : hotpo(n% 2 ? 3*n+1 : n/2) + 1;
+    // or
+    // const rs=0;
+    // while (n>1){
+    //     rs++;
+    //     n=n%2?n*3+1:n/2;
+    // }
+    // return rs;
+}
