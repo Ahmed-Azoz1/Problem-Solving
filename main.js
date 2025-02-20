@@ -3698,3 +3698,10 @@ function chromosomeCheck(sperm) {
     // or
     // return `Congratulations! You're going to have a ${sperm === 'XY' ? 'son' : 'daughter'}.`
 }
+
+// 319-5 without numbers !!
+function unusualFive() {
+    return "hello".length;
+    // or
+    // return ['one','two','three','four','five'].length;
+}
