@@ -3705,3 +3705,15 @@ function unusualFive() {
     // or
     // return ['one','two','three','four','five'].length;
 }
+
+// 320-Training JS #18: Methods of String object--concat() split() and its good friend join()
+function splitAndMerge(string, separator) {
+    return string.split(' ').map(ele=>ele.split('').join(separator)).join(' ');
+    // or
+    // const outStr = string
+	// 	.split(' ')
+	// 	.map((el) => el.split(''))
+	// 	.map((el) => el.join(separator))
+	// 	.join(' ');
+	// return outStr;
+}
