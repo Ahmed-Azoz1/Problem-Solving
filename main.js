@@ -3717,3 +3717,11 @@ function splitAndMerge(string, separator) {
 	// 	.join(' ');
 	// return outStr;
 }
+
+// 321-Training JS #1: create your first JS function and print "Hello World!"
+function helloWorld() {
+    return /*var str*/ console.log('Hello World!');
+    // or
+    // var str = "Hello World!";
+    // console.log( str );
+}
