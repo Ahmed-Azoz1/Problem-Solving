@@ -3725,3 +3725,10 @@ function helloWorld() {
     // var str = "Hello World!";
     // console.log( str );
 }
+
+// 322-Is it a palindrome?
+function isPalindrome(x) {
+    return x.split('').reverse().join('').toLowerCase() == x.toLowerCase();
+    // or
+    // return x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
+}
