@@ -3732,3 +3732,21 @@ function isPalindrome(x) {
     // or
     // return x.toLowerCase() === x.toLowerCase().split('').reverse().join('');
 }
+
+// 323-What's up next?
+function nextItem(xs, item) {
+    let next = false
+    for(let testing of xs){
+        if(next){
+            return testing
+        }
+        next = testing == item
+    }
+    // or
+    // const array = xs[Symbol.iterator]()
+    // for(let element of array){
+    //     if(element == item){
+    //         return array.next().value
+    //     }
+    // }
+}
