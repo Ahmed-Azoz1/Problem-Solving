@@ -3750,3 +3750,19 @@ function nextItem(xs, item) {
     //     }
     // }
 }
+
+// 324-Multiple of index
+function multipleOfIndex(array) {
+    return array.filter((ele, index) => ele % index ===0 || ele == 0);
+    // or
+    // let res = []
+    // if(array[0] === 0){
+    //     res.push(array[0])
+    // }
+    // for(let i = 1; i < array.length; i++){
+    //     if(array[i] % i === 0){
+    //         res.push(array[i])
+    //     }
+    // }
+    // return res
+}
