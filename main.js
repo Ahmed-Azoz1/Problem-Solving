@@ -3766,3 +3766,12 @@ function multipleOfIndex(array) {
     // }
     // return res
 }
+
+// 325-Quadratic Coefficients Solver
+function quadratic(x1, x2){
+    return [1,-(x1+x2),x1*x2];
+    // or
+    // const b = -x2-x1;
+    // const c = x1*x2
+    // return [1, b, c];
+}
