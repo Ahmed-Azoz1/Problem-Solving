@@ -3775,3 +3775,10 @@ function quadratic(x1, x2){
     // const c = x1*x2
     // return [1, b, c];
 }
+
+// 326-Third Angle of a Triangle
+function otherAngle(a, b) {
+    return 180 - a - b;
+    // or
+    // return 180-(a+b);
+}
