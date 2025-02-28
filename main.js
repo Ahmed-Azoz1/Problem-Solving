@@ -3782,3 +3782,13 @@ function otherAngle(a, b) {
     // or
     // return 180-(a+b);
 }
+
+// 327-Area of a Square
+function squareArea(A) {
+    const pi = Math.PI;
+    let r = A / (pi / 2);
+    let area = r * r;
+    return Math.round(area * 100) / 100;
+    // or
+    // return Math.round(Math.pow(A*2/Math.PI,2) * 100) /100;
+}
