@@ -3792,3 +3792,16 @@ function squareArea(A) {
     // or
     // return Math.round(Math.pow(A*2/Math.PI,2) * 100) /100;
 }
+
+// 328-How much water do I need?
+function howMuchWater(water, load, clothes){
+    return clothes < load ? 'Not enough clothes' : clothes > 2 * load ? 'Too much clothes' : +(water * 1.1 ** (clothes -load)).toFixed(2);
+    // or
+    // if(clothes < load){
+    //     return 'Not enough clothes'
+    // }else if(clothes > 2 * load){
+    //     return 'Too much clothes'
+    // }else{
+    //     return (water * 1.1 ** (clothes - load)).toFixed(2)
+    // }
+}
