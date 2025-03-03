@@ -3826,3 +3826,12 @@ function neutralise(s1, s2) {
     // }
     // return result;
 }
+
+// 330-Pythagorean Triple
+function isPythagoreanTriple(integers) {
+    let [a,b,c] = integers.sort((a,b)=> a-b);
+    return a ** 2 + b ** 2 == c ** 2;
+    // or
+    // let massiv = integers.sort((a, b) => a - b)
+    // return (massiv[0] ** 2 + massiv[1] ** 2 == massiv[2] ** 2)
+}
