@@ -3835,3 +3835,14 @@ function isPythagoreanTriple(integers) {
     // let massiv = integers.sort((a, b) => a - b)
     // return (massiv[0] ** 2 + massiv[1] ** 2 == massiv[2] ** 2)
 }
+
+// 331-Grasshopper - If/else syntax debug
+function checkAlive (health) {
+    if (health > 0) {
+        return true ;
+    }else{
+        return false;
+    }
+    // or
+    // return health > 0;
+}
