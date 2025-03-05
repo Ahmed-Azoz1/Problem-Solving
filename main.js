@@ -3846,3 +3846,9 @@ function checkAlive (health) {
     // or
     // return health > 0;
 }
+
+// 332-Push a hash/an object into array
+items = [{a: "b", c: "d"}];
+// or
+// let items = [];
+// items.push({ a: "b", c: "d" });
