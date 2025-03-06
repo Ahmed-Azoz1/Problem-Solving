@@ -3852,3 +3852,10 @@ items = [{a: "b", c: "d"}];
 // or
 // let items = [];
 // items.push({ a: "b", c: "d" });
+
+// 333-No Loops 2 - You only need one
+function check(a,x){
+    return a.includes(x);
+    // or
+    // return a.some(v=>v==x);
+}
