@@ -3859,3 +3859,12 @@ function check(a,x){
     // or
     // return a.some(v=>v==x);
 }
+
+// 334-Training JS #29: methods of arrayObject---concat() and join()
+function bigToSmall(arr){
+    return [].concat(...arr).sort((a,b)=>b-a).join('>');
+    // or
+    // let res = arr.flat()
+    // let bigToSmallArray = res.sort((a,b) => b-a)
+    // return bigToSmallArray.join('>')
+}
