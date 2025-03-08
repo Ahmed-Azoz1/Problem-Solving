@@ -3868,3 +3868,15 @@ function bigToSmall(arr){
     // let bigToSmallArray = res.sort((a,b) => b-a)
     // return bigToSmallArray.join('>')
 }
+
+// 335-Power
+function numberToPower(number, power){
+    let result = 1;
+    for(let i = 1;i <= power;i++){
+        result *= number;
+    }
+    return result;
+    // or
+    // if (power === 0) return 1;
+    // return number * numberToPower(number, power - 1);
+}
