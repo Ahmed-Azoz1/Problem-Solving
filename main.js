@@ -3880,3 +3880,11 @@ function numberToPower(number, power){
     // if (power === 0) return 1;
     // return number * numberToPower(number, power - 1);
 }
+
+// 336-Incorrect division method
+const solve = (x, y) => {
+    x / y;
+    // or
+    // let result = x/y;
+    // return result;
+}
