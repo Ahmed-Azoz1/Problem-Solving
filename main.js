@@ -3888,3 +3888,19 @@ const solve = (x, y) => {
     // let result = x/y;
     // return result;
 }
+
+// 337-Training JS #9: loop statement --while and do..while
+function padIt(str,n){
+    // while
+    return '*'.repeat((n+1)/2) + str + '*'.repeat(n/2);
+    // or
+    // while(n>0){
+    //     if(n%2 === 0) {
+    //         str = str + "*";
+    //     }else{
+    //         str = "*" + str;
+    //     }
+    //     n --;
+    // }
+    // return str;
+}
