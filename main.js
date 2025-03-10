@@ -3904,3 +3904,21 @@ function padIt(str,n){
     // }
     // return str;
 }
+
+// 338-Title: Function to Compute the Mirror Product Sum of an Array
+function mirrorProduct(arr){
+    let sum = 0;
+    let numbers = arr.length;
+    const mid = Math.ceil(numbers / 2);
+    for(let i =0;i<mid;i++){
+        let index = numbers -i-1;
+        sum += arr[i] * arr[index];
+    }
+    return sum;
+    // or
+    // let sum = 0;
+    // for (let i = 0; i < arr.length / 2; i++) {
+    //     sum += arr[i] * arr[arr.length - 1 - i];
+    // }
+    // return sum;
+}
