@@ -3922,3 +3922,13 @@ function mirrorProduct(arr){
     // }
     // return sum;
 }
+
+// 339-For Twins: 1. Types
+function typeValidation(variable, type) {
+    return typeof variable === type;
+    // or
+    // if(typeof(variable) === type) {
+    //     return true;
+    // }
+    // return false;
+}
