@@ -3932,3 +3932,14 @@ function typeValidation(variable, type) {
     // }
     // return false;
 }
+
+// 340-The falling speed of petals
+function sakuraFall(v) {
+    return v <= 0 ? 0 : 400 / v;
+    // or
+    // const t = 400 / v
+    // if (v <= 0){
+    //     return 0
+    // }
+    // return t;
+}
