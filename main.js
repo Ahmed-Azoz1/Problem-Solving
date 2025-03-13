@@ -3943,3 +3943,13 @@ function sakuraFall(v) {
     // }
     // return t;
 }
+
+// 341-Unexpected parsing
+function getStatus(isBusy) {
+    var msg = (isBusy ? "busy" : "available");
+    return {
+        status: msg
+    }
+    // or
+    // return ({ status: isBusy ? "busy" : "available" });
+}
