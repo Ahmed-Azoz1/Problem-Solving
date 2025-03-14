@@ -3953,3 +3953,12 @@ function getStatus(isBusy) {
     // or
     // return ({ status: isBusy ? "busy" : "available" });
 }
+
+// 342-Count words
+function countWords(str) {
+    return str.split(/\s/).filter(ele=>ele).length;
+    // or
+    // str = str.trim();
+    // if (str === '') return 0;
+    // return str.split(/\s+/).length;
+}
