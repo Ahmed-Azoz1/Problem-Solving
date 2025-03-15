@@ -3962,3 +3962,22 @@ function countWords(str) {
     // if (str === '') return 0;
     // return str.split(/\s+/).length;
 }
+
+// 343-Implement Array.prototype.filter()
+Array.prototype.filter = function (func) {
+    let result = [];
+    for (let i = 0; i < this.length; i++) {
+        if (func(this[i])) {
+            result.push(this[i]);
+        }
+    }
+    return result;
+    // or
+    // let result = [];
+    // this.forEach(number => {
+    //     if(func(number)){
+    //         result.push(number);
+    //     }
+    // });
+    // return result;
+}
