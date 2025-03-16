@@ -3981,3 +3981,13 @@ Array.prototype.filter = function (func) {
     // });
     // return result;
 }
+
+// 344-ES6 string addition
+function joinStrings(string1, string2){
+    return `${string1} ${string2}`;
+    // or
+    // const arr = [];
+    // arr.push(string1, string2);
+    // if (arr.toString() === 'a,,b') return 'a, b';
+    // return arr.toString().replace(/,/, ' ');
+}
