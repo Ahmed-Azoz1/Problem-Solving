@@ -3991,3 +3991,23 @@ function joinStrings(string1, string2){
     // if (arr.toString() === 'a,,b') return 'a, b';
     // return arr.toString().replace(/,/, ' ');
 }
+
+// 345-Training JS #16: Methods of String object--slice(), substring() and substr()
+function cutIt(arr){
+    const result = [];
+    let shortLength;
+    for(let i =0;i< arr.length;i++){
+        if(shortLength < arr[i].length){
+            shortLength = shortLength;
+        }else{
+            shortLength = arr[i].length;
+        }
+    }
+    for(i=0;i<arr.length;i++){
+        result.push(arr[i].slice(0,shortLength));
+    }
+    return result;
+    // or
+    // const minLength = Math.min(...arr.map(str => str.length));
+    // return arr.map(str => str.slice(0, minLength));
+}
