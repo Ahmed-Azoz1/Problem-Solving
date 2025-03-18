@@ -4011,3 +4011,22 @@ function cutIt(arr){
     // const minLength = Math.min(...arr.map(str => str.length));
     // return arr.map(str => str.slice(0, minLength));
 }
+
+// 346-Training JS #13: Number object and its properties
+function whatNumberIsIt(n){
+    return Number.isNaN(n) ? 'Input number is Number.NaN' :
+    n === Number.POSITIVE_INFINITY ? 'Input number is Number.POSITIVE_INFINITY' :
+    n === Number.NEGATIVE_INFINITY ? 'Input number is Number.NEGATIVE_INFINITY' :
+    n === Number.MAX_VALUE ? 'Input number is Number.MAX_VALUE' :
+    n === Number.MIN_VALUE ? 'Input number is Number.MIN_VALUE' :
+    `Input number is ${n}`;
+    // or
+    // switch (true) {
+    //     case (n==Number.MAX_VALUE): return "Input number is Number.MAX_VALUE";
+    //     case (n==Number.POSITIVE_INFINITY): return "Input number is Number.POSITIVE_INFINITY";
+    //     case (n==Number.MIN_VALUE): return "Input number is Number.MIN_VALUE";
+    //     case (n==Number.NEGATIVE_INFINITY): return "Input number is Number.NEGATIVE_INFINITY";
+    //     case (isNaN(n)): return "Input number is Number.NaN";
+    //     default: return "Input number is " + n;
+    // }
+}
