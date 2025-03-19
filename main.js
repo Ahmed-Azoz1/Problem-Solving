@@ -4030,3 +4030,16 @@ function whatNumberIsIt(n){
     //     default: return "Input number is " + n;
     // }
 }
+
+// 347-Do something "n.times" (Simplifying "for" loops)
+Number.prototype.times = function (f) {
+    let i =0;
+    while(i<this) {
+        f(i);
+        i++
+    }
+    // or
+    // for (let i = 0; i < this; i++) {
+    //     f(i);
+    // }
+}
