@@ -4043,3 +4043,14 @@ Number.prototype.times = function (f) {
     //     f(i);
     // }
 }
+
+// 348-Training JS #32: methods of Math---round() ceil() and floor()
+function roundIt(n){
+    return (difference => difference < 0 ? Math.ceil(n) : difference > 0 ? Math.floor(n) : Math.round(n))
+    (String(n).split('.').reduce((prev,curr)=>prev.length - curr.length));
+    // or
+    // const a = String(n).split('.')
+    // if (a[0].length < a[1].length) return Math.ceil(n)
+    // if (a[0].length > a[1].length) return Math.floor(n)
+    // return Math.round(n);
+}
