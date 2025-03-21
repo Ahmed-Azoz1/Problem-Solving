@@ -4054,3 +4054,11 @@ function roundIt(n){
     // if (a[0].length > a[1].length) return Math.floor(n)
     // return Math.round(n);
 }
+
+// 349-Aspect Ratio Cropping - Part 1
+function aspectRatio(x,y){
+    return [Math.ceil(16/9 *y),y];
+    // or
+    // let xNew = Math.ceil((16/9)* y)
+    // return [xNew, y]
+}
