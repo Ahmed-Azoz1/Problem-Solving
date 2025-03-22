@@ -4062,3 +4062,8 @@ function aspectRatio(x,y){
     // let xNew = Math.ceil((16/9)* y)
     // return [xNew, y]
 }
+
+// 350-!a == a ?!
+const a = []
+// or
+// const a = '0';
