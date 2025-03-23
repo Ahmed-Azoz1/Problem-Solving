@@ -4074,3 +4074,12 @@ function ensureQuestion(s) {
     // or
     // return s.includes('?') ? s : `${s}?`;
 }
+
+// 352-Semi-Optional
+function wrap(value) {
+    return{
+        value:value 
+    };
+    // or
+    // return {value};
+}
