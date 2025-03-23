@@ -4067,3 +4067,10 @@ function aspectRatio(x,y){
 const a = []
 // or
 // const a = '0';
+
+// 351-Ensure question
+function ensureQuestion(s) {
+    return s.endsWith('?') ? s : `${s}?`;
+    // or
+    // return s.includes('?') ? s : `${s}?`;
+}
