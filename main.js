@@ -4110,3 +4110,10 @@ let rooms = {
         },
     }
 }
+
+// 355-Training JS #14: Methods of Number object--toString() and toLocaleString()
+function colorOf(r,g,b){
+    return `#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`;
+    // or
+    // return '#' + [r,g,b].map(x => ('0' + x.toString(16)).slice(-2)).join('');
+}
