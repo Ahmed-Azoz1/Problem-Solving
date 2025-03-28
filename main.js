@@ -4117,3 +4117,10 @@ function colorOf(r,g,b){
     // or
     // return '#' + [r,g,b].map(x => ('0' + x.toString(16)).slice(-2)).join('');
 }
+
+// 356-Is integer safe to use?
+function SafeInteger(n) {
+    return Number.isSafeInteger(n);
+    // or
+    // return Number.isInteger(n) && Math.abs(n) <= Number.MAX_SAFE_INTEGER;
+}
