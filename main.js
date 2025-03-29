@@ -4124,3 +4124,10 @@ function SafeInteger(n) {
     // or
     // return Number.isInteger(n) && Math.abs(n) <= Number.MAX_SAFE_INTEGER;
 }
+
+// 357-Not so black box
+JSopenSesame();
+// or
+// blackBox();
+// console.log(blackBox + "string")
+// JSopenSesame()
