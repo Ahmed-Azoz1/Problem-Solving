@@ -4131,3 +4131,12 @@ JSopenSesame();
 // blackBox();
 // console.log(blackBox + "string")
 // JSopenSesame()
+
+// 358-Training JS #34: methods of Math---pow() sqrt() and cbrt()
+function cutCube(volume,n){
+    let cube = Math.cbrt(volume);
+    let cut = Math.cbrt(n);
+    return cut % 1 === 0 && cube % cut === 0;
+    // or
+    // return !(Math.cbrt(n) % 1) && !(Math.cbrt(volume /n) %1);
+}
