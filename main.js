@@ -4140,3 +4140,15 @@ function cutCube(volume,n){
     // or
     // return !(Math.cbrt(n) % 1) && !(Math.cbrt(volume /n) %1);
 }
+
+// 359-Training JS #21: Methods of String object--trim() and the string template
+function fiveLine(s){
+    return [...Array(5)].map((_,index)=> s.trim().repeat(index + 1)).join('\n');
+    // or
+    // let str = s.trim();
+    // let result = '';
+    // for (let i = 1; i <= 5; i++) {
+    //     result += str.repeat(i) + '\n';
+    // }
+    // return result.slice(0, -1);
+}
