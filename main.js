@@ -4152,3 +4152,18 @@ function fiveLine(s){
     // }
     // return result.slice(0, -1);
 }
+
+// 360-Configure package json for a node application
+const configuration = {
+    "name": "your-pack-name",
+    "description": "",
+    "version": "1.0.0",
+    "devDependencies": {
+        "express": "^4.17.1"
+    },
+};
+// or
+// const configuration = {
+//     "name": "your-pack-name",
+//     "version": "1.1.1"
+//   };
