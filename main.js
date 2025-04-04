@@ -4194,3 +4194,10 @@ function bloodAlcoholContent(drinks, weight, sex, time){
     // let bac = (drinks.ounces * drinks.abv * 5.14 / weight * r) - 0.015 * time;
     // return +bac.toFixed(4);
 }
+
+// 363-Simple Comparison?
+function add(a, b){
+    return a == b;
+    // or
+    // return (a == b ? true: false)
+}
