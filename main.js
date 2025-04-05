@@ -4201,3 +4201,10 @@ function add(a, b){
     // or
     // return (a == b ? true: false)
 }
+
+// 364-Grasshopper - Order of operations
+function orderOperations () {
+    return (2 + 2) * (2 + 2) * 2;
+    // or
+    // return 2 + 2 * 2 + 2 * 2 + 22;
+}
