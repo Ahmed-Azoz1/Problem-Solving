@@ -4208,3 +4208,11 @@ function orderOperations () {
     // or
     // return 2 + 2 * 2 + 2 * 2 + 22;
 }
+
+// 365-Geometry Basics: Circle Circumference in 2D
+function circleCircumference(circle) {
+    return 2 * Math.PI * circle.radius;
+    // or
+    // const circumference = 2*circle.radius*Math.PI;
+    // return Number(circumference.toFixed(6)); 
+}
