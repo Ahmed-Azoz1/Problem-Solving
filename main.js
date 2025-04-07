@@ -4216,3 +4216,10 @@ function circleCircumference(circle) {
     // const circumference = 2*circle.radius*Math.PI;
     // return Number(circumference.toFixed(6)); 
 }
+
+// 366-Regexp Basics - is it a digit?
+String.prototype.digit = function() {
+    return /^\d$/.test(this);
+    // or
+    // return this.match(/^[0-9]$/) ? true : false;
+};
