@@ -4234,5 +4234,16 @@ function blackAndWhite(arr) {
     }
     return "It's a white array";
     // or
-    return `It's a ${!Array.isArray(arr) ? `fake` : arr.includes(5) && arr.includes(13) ? `black` : `white`} array`;
+    // return `It's a ${!Array.isArray(arr) ? `fake` : arr.includes(5) && arr.includes(13) ? `black` : `white`} array`;
+}
+
+// 368-Improving Math.round(x)
+Math.roundTo = function (number, precision) {
+    if (precision < 0) {
+        return Math.round(number);
+    }
+    const factor = Math.pow(10, precision);
+    return Math.round(number * factor) / factor;
+    // or
+    // return Math.round(number * Math.pow(10, precision)) / Math.pow(10, precision);
 }
