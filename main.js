@@ -4247,3 +4247,13 @@ Math.roundTo = function (number, precision) {
     // or
     // return Math.round(number * Math.pow(10, precision)) / Math.pow(10, precision);
 }
+
+// 369-Shifty Closures
+const greet = name => () => `Hello, ${name}!`;
+const greet_abe = greet(`Abe`);
+const greet_ben = greet(`Ben`);
+// or
+// let name = 'Abe'
+// const greetAbe = () => 'Hello, ' + name + '!'
+// let newName = 'Ben'
+// const greetBen = () => 'Hello, ' + newName + '!'
