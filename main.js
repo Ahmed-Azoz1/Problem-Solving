@@ -4257,3 +4257,10 @@ const greet_ben = greet(`Ben`);
 // const greetAbe = () => 'Hello, ' + name + '!'
 // let newName = 'Ben'
 // const greetBen = () => 'Hello, ' + newName + '!'
+
+// 370-Find variable which breaks strict comparison!
+function findStrangeValue() {
+    return NaN;
+    // or
+    // return parseInt("");
+}
