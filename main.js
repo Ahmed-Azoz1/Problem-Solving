@@ -4264,3 +4264,14 @@ function findStrangeValue() {
     // or
     // return parseInt("");
 }
+
+// 371-Potenciation
+function power(x,y){
+    return x != 0 || y != 0 ? x ** y : 1;
+    // or
+    // if (x != 0 || y != 0) {
+    //     return x ** y;
+    // } else {
+    //     return 1;
+    // }
+}
