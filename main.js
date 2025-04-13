@@ -4275,3 +4275,10 @@ function power(x,y){
     //     return 1;
     // }
 }
+
+// 372-Be Concise III - Sum Squares
+const sumSquares = (array) => {
+    return array.reduce((sum, num) => sum + num ** 2, 0);
+    //or
+    // return array.reduce((sum, num) => sum + Math.pow(num, 2), 0);
+};
