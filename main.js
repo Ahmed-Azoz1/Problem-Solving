@@ -4282,3 +4282,21 @@ const sumSquares = (array) => {
     //or
     // return array.reduce((sum, num) => sum + Math.pow(num, 2), 0);
 };
+
+// 373-Looking for a benefactor
+function newAvg(arr, newavg) {
+    let result = (arr.length + 1) * newavg - arr.reduce((sum, num) => sum + num, 0);
+    if (result <= 0) {
+        throw new Error("Expected New Average is too low");
+    }
+    return Math.ceil(result);
+    // or
+    // let result = (arr.length + 1) * newavg;
+    // for(let index = 0; index < arr.length; index++){
+    //     result -= arr[index];
+    // }
+    // if (result <= 0) {
+    //     throw new Error("Expected New Average is too low");
+    // }
+    // return Math.ceil(result);
+}
