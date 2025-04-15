@@ -4300,3 +4300,32 @@ function newAvg(arr, newavg) {
     // }
     // return Math.ceil(result);
 }
+
+// 374-The Poet And The Pendulum
+function pendulum(values) {
+    values.sort((a, b) => a - b);
+    const result = [];
+    for (let i = 0; i < values.length; i++) {
+        if (i % 2 === 0) {
+            result.unshift(values[i]);
+        } else {
+            result.push(values[i]);
+        }
+    }
+    return result;
+    // or
+    // const sorted = [...values].sort((a, b) => a - b);
+    // const n = values.length;
+    // const result = Array(n);
+    // let mid = Math.floor((n - 1) / 2);
+    // let left = mid;
+    // let right = mid + 1;
+    // for (let i = 0; i < n; i++) {
+    //     if (i % 2 === 0) {
+    //         result[left--] = sorted[i];
+    //     } else {
+    //         result[right++] = sorted[i];
+    //     }
+    // }
+    // return result;
+}
