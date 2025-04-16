@@ -4329,3 +4329,17 @@ function pendulum(values) {
     // }
     // return result;
 }
+
+// 375-Sort rectangles and circles by area II
+function sortByArea(array) {
+    return [...array].sort((a, b) => {
+        const areaA = Array.isArray(a) ? a[0] * a[1] : Math.PI * a * a;
+        const areaB = Array.isArray(b) ? b[0] * b[1] : Math.PI * b * b;
+        return areaA - areaB;
+    });
+    // or
+    // return array.map(item => ({
+    //     shape: item,
+    //     area: Array.isArray(item) ? item[0] * item[1] : Math.PI * item * item
+    // })).sort((a, b) => a.area - b.area).map(obj => obj.shape);
+}
