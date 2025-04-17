@@ -4343,3 +4343,10 @@ function sortByArea(array) {
     //     area: Array.isArray(item) ? item[0] * item[1] : Math.PI * item * item
     // })).sort((a, b) => a.area - b.area).map(obj => obj.shape);
 }
+
+// 376-Unpacking Arguments
+function spread(func, args) {
+    return func(...args);
+    // or
+    // return func.apply(null, args);
+}
