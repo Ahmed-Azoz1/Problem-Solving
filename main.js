@@ -4350,3 +4350,10 @@ function spread(func, args) {
     // or
     // return func.apply(null, args);
 }
+
+// 377-Sum of all arguments
+function sum() {
+    return Array.from(arguments).reduce((acc, curr) => acc + curr, 0);
+    // or
+    // return [...arguments].reduce((acc, curr) => acc + curr, 0);
+}
