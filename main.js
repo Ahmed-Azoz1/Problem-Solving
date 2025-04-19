@@ -4357,3 +4357,10 @@ function sum() {
     // or
     // return [...arguments].reduce((acc, curr) => acc + curr, 0);
 }
+
+// 378-Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+function isRubyComing(list) {
+    return list.some(person => person.language === 'Ruby');
+    // or
+    // return list.find(x => x.language == 'Ruby') ? true : false;
+}
