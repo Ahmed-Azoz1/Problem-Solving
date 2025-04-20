@@ -4364,3 +4364,31 @@ function isRubyComing(list) {
     // or
     // return list.find(x => x.language == 'Ruby') ? true : false;
 }
+
+// 379-Sum of powers of 2
+const powers = n => {
+    let result = [];
+    let power = 0;
+    while (n > 0) {
+        if (n % 2 === 1) {
+            result.push(2 ** power);
+        }
+        n = Math.floor(n / 2);
+        power++;
+    }
+    return result.sort((a, b) => a - b); 
+    // or
+    // let result = [];
+    // let power = 0;
+    // while (2 ** power <= n) {
+    //     power++;
+    // }
+    // for (let i = power - 1; i >= 0; i--) {
+    //     const value = 2 ** i;
+    //     if (n >= value) {
+    //         result.push(value);
+    //         n -= value;
+    //     }
+    // }
+    // return result.sort((a, b) => a - b);
+};
