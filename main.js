@@ -4392,3 +4392,33 @@ const powers = n => {
     // }
     // return result.sort((a, b) => a - b);
 };
+
+// 380-Numbers Which Sum of Powers of Its Digits Is The Same Number
+function eqSumPowdig(hMax, exp) {
+    let result = [];
+    for (let num = 10; num <= hMax; num++) {
+        let sum = 0;
+        let digits = num.toString().split('');
+        for (let digit of digits) {
+            sum += Math.pow(parseInt(digit), exp);
+        }
+        if (sum === num) {
+            result.push(num);
+        }
+    }
+    return result;
+    // or
+    // let result = [];
+    // for (let num = 10; num <= hMax; num++) {
+    //     let sum = num
+    //         .toString()
+    //         .split('')
+    //         .map(digit => Math.pow(parseInt(digit), exp))
+    //         .reduce((acc, curr) => acc + curr, 0);
+        
+    //     if (sum === num) {
+    //         result.push(num);
+    //     }
+    // }
+    // return result;
+}
