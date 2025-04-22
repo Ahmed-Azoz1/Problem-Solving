@@ -4422,3 +4422,21 @@ function eqSumPowdig(hMax, exp) {
     // }
     // return result;
 }
+
+// 381-Tricky Doubles
+function trickyDoubles(n) {
+    const str = n.toString();
+    const len = str.length;
+    if (len % 2 === 0) {
+        const half = len / 2;
+        const firstHalf = str.slice(0, half);
+        const secondHalf = str.slice(half);
+        if (firstHalf === secondHalf) {
+            return n;
+        }
+    }
+    return n * 2;
+    // or
+    // let s = n.toString(), sh = s.slice(s.length / 2);
+    // return sh + sh == s ? n : n * 2;
+}
