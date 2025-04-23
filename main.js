@@ -4440,3 +4440,26 @@ function trickyDoubles(n) {
     // let s = n.toString(), sh = s.slice(s.length / 2);
     // return sh + sh == s ? n : n * 2;
 }
+
+// 382-Find Count of Most Frequent Item in an Array
+function mostFrequentItemCount(collection) {
+    const countMap = {};
+    let maxCount = 0;
+    let mostFrequentItem = null;
+
+    for (const item of collection) {
+        countMap[item] = (countMap[item] || 0) + 1;
+        if (countMap[item] > maxCount) {
+            maxCount = countMap[item];
+            mostFrequentItem = item;
+        }
+    }
+    return maxCount;
+    // or
+    // if (collection.length === 0) return 0;
+    // let count = Object.create(null);
+    // collection.forEach( item => {
+    //     count[item] = (count[item] || 0) + 1;
+    // });
+    // return Math.max(...Object.values(count));
+}
