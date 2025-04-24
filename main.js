@@ -4463,3 +4463,14 @@ function mostFrequentItemCount(collection) {
     // });
     // return Math.max(...Object.values(count));
 }
+
+// 383-Password validator
+function password(str) {
+    const hasUpperCase = /[A-Z]/.test(str);
+    const hasLowerCase = /[a-z]/.test(str);
+    const hasNumber = /[0-9]/.test(str);
+    const hasMinLength = str.length >= 8;
+    return hasUpperCase && hasLowerCase && hasNumber && hasMinLength;
+    // or
+    // return str.length >= 8 && /[a-z]/.test(str) && /[A-Z]/.test(str) && /\d/.test(str);
+}
