@@ -4474,3 +4474,10 @@ function password(str) {
     // or
     // return str.length >= 8 && /[a-z]/.test(str) && /[A-Z]/.test(str) && /\d/.test(str);
 }
+
+// 384-Sort arrays - 1
+sortme = function( names ){
+    return names.sort();
+    // or
+    // return names.sort((a, b) => a.localeCompare(b));
+}
