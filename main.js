@@ -4481,3 +4481,12 @@ sortme = function( names ){
     // or
     // return names.sort((a, b) => a.localeCompare(b));
 }
+
+// 385-Say hello!
+function greet(name) {
+    if(!name) return null;
+    return `hello ${name}!`;
+    // or
+    // if(!name) return null;
+    // return 'hello ' + name + '!';
+}
