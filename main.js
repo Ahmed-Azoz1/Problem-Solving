@@ -4490,3 +4490,24 @@ function greet(name) {
     // if(!name) return null;
     // return 'hello ' + name + '!';
 }
+
+// 386-Latin Squares
+function makeLatinSquare(n) {
+    let square = [];
+    for (let i = 0; i < n; i++) {
+        let row = [];
+        for (let j = 0; j < n; j++) {
+            row.push((i + j) % n + 1);
+        }
+        square.push(row);
+    }
+    return square;
+    // or
+    // let square = new Array(n).fill(0).map(() => new Array(n).fill(0))
+    // for (let i = 0; i < n; i++) {
+    //     for (let j = 0; j < n; j++) {
+    //     square[i][j] = ((i + j) % n) + 1
+    //     }
+    // }
+    // return square;
+}
