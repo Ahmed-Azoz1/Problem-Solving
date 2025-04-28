@@ -4511,3 +4511,14 @@ function makeLatinSquare(n) {
     // }
     // return square;
 }
+
+// 387-Filter unused digits
+function unusedDigits() {
+    const allDigits = '0123456789';
+    const usedDigits = Array.from(arguments).join('').split('');
+    return allDigits.split('').filter(d => !usedDigits.includes(d)).join('');
+}
+// or
+// function unusedDigits(...args){
+//     return "0123456789".replace(new RegExp('['+args.join('')+']','g'), '')
+// }
