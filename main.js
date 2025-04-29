@@ -4522,3 +4522,65 @@ function unusedDigits() {
 // function unusedDigits(...args){
 //     return "0123456789".replace(new RegExp('['+args.join('')+']','g'), '')
 // }
+
+// 388-Mirroring cipher
+function pernicious(n) {
+    function isPrime(num) {
+        if (num < 2) return false;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+    }
+    function hammingWeight(num) {
+        return num.toString(2).split('1').length - 1;
+    }
+    if (n <= 0) return "No pernicious numbers";
+    
+    let limit = Math.floor(n);
+    let perniciousNumbers = [];
+    
+    for (let i = 1; i <= limit; i++) {
+        let digitSum = hammingWeight(i);
+        if (isPrime(digitSum)) {
+            perniciousNumbers.push(i);
+        }
+    }
+    if (perniciousNumbers.length > 0) {
+        return perniciousNumbers;
+    } else {
+        return "No pernicious numbers";
+    }
+    // or
+    // if (n <= 0) return "No pernicious numbers";
+    // let sieve = Array(33).fill(true);
+    // sieve[0] = sieve[1] = false;
+    // for (let i = 2; i <= Math.sqrt(32); i++) {
+    //     if (sieve[i]) {
+    //         for (let j = i * i; j <= 32; j += i) {
+    //             sieve[j] = false;
+    //         }
+    //     }
+    // }
+
+    // function hammingWeight(num) {
+    //     let count = 0;
+    //     while (num) {
+    //         count += num & 1;
+    //         num >>= 1;
+    //     }
+    //     return count;
+    // }
+
+    // let limit = Math.floor(n);
+    // let perniciousNumbers = [];
+
+    // for (let i = 1; i <= limit; i++) {
+    //     let digitSum = hammingWeight(i);
+    //     if (sieve[digitSum]) {
+    //         perniciousNumbers.push(i);
+    //     }
+    // }
+    // return perniciousNumbers.length > 0 ? perniciousNumbers : "No pernicious numbers";
+}
+
