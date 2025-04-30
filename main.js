@@ -4584,3 +4584,9 @@ function pernicious(n) {
     // return perniciousNumbers.length > 0 ? perniciousNumbers : "No pernicious numbers";
 }
 
+// 389-Simple Fun #176: Reverse Letter
+function reverseLetter(str) {
+    return str.split('').filter(c => /[a-zA-Z]/.test(c)).reverse().join('');
+    // or
+    // return str.split('').filter(c => c.match(/[a-zA-Z]/)).reverse().join('');
+}
