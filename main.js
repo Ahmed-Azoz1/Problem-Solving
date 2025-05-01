@@ -4590,3 +4590,56 @@ function reverseLetter(str) {
     // or
     // return str.split('').filter(c => c.match(/[a-zA-Z]/)).reverse().join('');
 }
+
+// 390-Family Relations
+function relations(familyArray, targetPair) {
+    const [a, b] = targetPair;
+    const parent = {}, grandparent = {};
+
+    for (let [mom, child] of familyArray) {
+        parent[child] = mom;
+    }
+    for (let child in parent) {
+        if (parent[parent[child]]) {
+        grandparent[child] = parent[parent[child]];
+        }
+    }
+    return parent[a] === b ? 'Mother' :
+            parent[b] === a ? 'Daughter' :
+            grandparent[a] === b ? 'Grandmother' :
+            grandparent[b] === a ? 'Granddaughter' :
+            parent[a] && parent[b] && parent[a] === parent[b] ? 'Sister' :
+            parent[a] && parent[parent[a]] === parent[b] ? 'Aunt' :
+            parent[b] && parent[parent[b]] === parent[a] ? 'Niece' :
+            parent[a] && parent[b] && parent[parent[a]] === parent[parent[b]] && parent[a] !== parent[b] ? 'Cousin' :
+            'Unknown';
+    // or
+    // const [person1, person2] = targetPair;
+    // const parent = {};
+    // const children = {};
+    
+    // for (let [mom, child] of familyArray) {
+    //     parent[child] = mom;
+    //     if (!children[mom]) children[mom] = [];
+    //     children[mom].push(child);
+    // }
+    // if (parent[person1] === person2) return 'Mother';
+    // if (parent[person2] === person1) return 'Daughter';
+    // if (parent[parent[person1]] === person2) return 'Grandmother';
+    // if (parent[parent[person2]] === person1) return 'Granddaughter';
+    // if (parent[person1] && parent[person2] && parent[person1] === parent[person2])
+    //     return 'Sister';
+    // if (parent[person1] && parent[parent[person1]] === parent[person2])
+    //     return 'Aunt';
+    // if (parent[person2] && parent[parent[person2]] === parent[person1])
+    //     return 'Niece';
+    // if (
+    //     parent[person1] &&
+    //     parent[person2] &&
+    //     parent[parent[person1]] &&
+    //     parent[parent[person2]] &&
+    //     parent[parent[person1]] === parent[parent[person2]] &&
+    //     parent[person1] !== parent[person2]
+    // ) return 'Cousin';
+    // return 'Unknown';
+}
