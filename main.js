@@ -4643,3 +4643,14 @@ function relations(familyArray, targetPair) {
     // ) return 'Cousin';
     // return 'Unknown';
 }
+
+// 391-Simple Fun #198: Cake Slice
+function cakeSlice(n) {
+    let sum = 1;
+    for (let i = 1; i <= n; i++){
+        sum += i;
+    }
+    return sum;
+    // or
+    // return (n * (n + 1)) / 2 + 1;
+}
