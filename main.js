@@ -4654,3 +4654,14 @@ function cakeSlice(n) {
     // or
     // return (n * (n + 1)) / 2 + 1;
 }
+
+// 392-Katastrophe!
+function strongEnough(earthquake, age) {
+    let magnitude = earthquake.map(shockwave => shockwave.reduce((sum, tremor) => sum + tremor, 0)).reduce((product, shockSum) => product * shockSum, 1);
+    let buildingStrength = 1000 * Math.pow(0.99, age);
+    return buildingStrength >= magnitude ? "Safe!" : "Needs Reinforcement!";
+    // or
+    // earthquake = earthquake.reduce((s, v) => s * v.reduce((x, s) => x + s, 0), 1);
+    // let strength = 1000 * Math.pow(.99, age);
+    // return strength > earthquake ? 'Safe!' : 'Needs Reinforcement!';
+}
