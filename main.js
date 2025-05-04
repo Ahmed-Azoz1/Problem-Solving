@@ -4665,3 +4665,20 @@ function strongEnough(earthquake, age) {
     // let strength = 1000 * Math.pow(.99, age);
     // return strength > earthquake ? 'Safe!' : 'Needs Reinforcement!';
 }
+
+// 393-Return a string's even characters.
+function evenChars(string) {
+    if (string.length < 2 || string.length > 100) {
+        return "invalid string";
+    }
+    const result = [];
+    for (let i = 1; i < string.length; i += 2) {
+        result.push(string[i]);
+    }
+    return result;
+    // or
+    // if(2 > string.length || string.length > 100) return 'invalid string';
+    // return string.split('').filter(function(item, index) {
+    //     return index % 2 != 0;
+    // });
+}
