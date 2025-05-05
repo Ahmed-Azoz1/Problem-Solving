@@ -4682,3 +4682,31 @@ function evenChars(string) {
     //     return index % 2 != 0;
     // });
 }
+
+// 394-Credit Card Checker
+function validCard(card) {
+    let sum = 0;
+    card = card.replace(/\s/g, '');
+    let shouldDouble = false;
+    for (let i = card.length - 1; i >= 0; i--) {
+        let digit = parseInt(card[i]);
+        if (shouldDouble) {
+            digit *= 2;
+            if (digit > 9) {
+                digit -= 9;
+            }
+        }
+        sum += digit;
+        shouldDouble = !shouldDouble;
+    }
+    return sum % 10 === 0;
+    // or
+    // let sum = 0;
+    // card = card.split(" ").join("");
+    // for(let i = card.length - 1; i >= 0; i--){
+    //     const currentDigit = parseInt(card[i])
+    //     if(i % 2) sum += currentDigit;
+    //     else sum += currentDigit * 2 < 9 ? currentDigit * 2 : currentDigit * 2 - 9; 
+    // }
+    // return sum % 10 !== 0 ? false : true;
+}
