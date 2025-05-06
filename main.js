@@ -4710,3 +4710,21 @@ function validCard(card) {
     // }
     // return sum % 10 !== 0 ? false : true;
 }
+
+// 395-Digits Average
+function digitsAverage(input) {
+    let digits = input.toString().split('').map(Number);
+    while (digits.length > 1) {
+        let next = [];
+        for (let i = 0; i < digits.length - 1; i++) {
+            let avg = Math.ceil((digits[i] + digits[i + 1]) / 2);
+            next.push(avg);
+        }
+        digits = next;
+    }
+    return digits[0];
+    // or
+    // if (input < 10) return input
+    // const newInput = [...`${input}`].map(Number).reduce((acc, n, i, arr) => i < arr.length - 1 ? acc + Math.ceil((n + arr[i + 1]) / 2) : acc,'')
+    // return digitsAverage(+newInput)
+}
