@@ -4728,3 +4728,19 @@ function digitsAverage(input) {
     // const newInput = [...`${input}`].map(Number).reduce((acc, n, i, arr) => i < arr.length - 1 ? acc + Math.ceil((n + arr[i + 1]) / 2) : acc,'')
     // return digitsAverage(+newInput)
 }
+
+// 396-Inverting a Hash
+function invertHash(hash) {
+    return Object.entries(hash).reduce((acc, [key, value]) => {
+        acc[value] = key;
+        return acc;
+    }, {});
+    // or
+    // const result = {};
+    // for(let prop in hash) {
+    //     if(hash.hasOwnProperty(prop)) {
+    //     result[hash[prop]] = prop
+    //     }
+    // }
+    // return result;
+}
