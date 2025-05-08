@@ -4744,3 +4744,21 @@ function invertHash(hash) {
     // }
     // return result;
 }
+
+// 397-Search for letters
+function change(string) {
+    const lowerCaseString = string.toLowerCase();
+    const result = new Array(26).fill('0');
+    for (let char of lowerCaseString) {
+        if (char >= 'a' && char <= 'z') {
+            const index = char.charCodeAt(0) - 'a'.charCodeAt(0);
+            result[index] = '1';
+        }
+    }
+    return result.join('');
+    // or
+    // string = string.toLowerCase()
+    // return 'abcdefghijklmnopqrstuvwxyz'.split('').map(function (c) { 
+    //     return string.indexOf(c) !== -1 ? 1 : 0;
+    // }).join('');
+}
