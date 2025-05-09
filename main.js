@@ -4762,3 +4762,20 @@ function change(string) {
     //     return string.indexOf(c) !== -1 ? 1 : 0;
     // }).join('');
 }
+
+// 398-What comes after?
+function comes_after(str, l) {
+    let result = '';
+    let lowerL = l.toLowerCase();
+    for (let i = 0; i < str.length - 1; i++) {
+        if (str[i].toLowerCase() === lowerL) {
+        let nextChar = str[i + 1];
+        if (/[a-zA-Z]/.test(nextChar)) {
+            result += nextChar;
+        }
+        }
+    }
+    return result;
+    // or
+    // return (str.match(new RegExp(`(?<=${l})[a-z]`,'gi'))||[]).join('');
+}
