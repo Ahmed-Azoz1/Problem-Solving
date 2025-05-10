@@ -4779,3 +4779,12 @@ function comes_after(str, l) {
     // or
     // return (str.match(new RegExp(`(?<=${l})[a-z]`,'gi'))||[]).join('');
 }
+
+// 399-Unique string characters
+function solve(a, b) {
+    let uniqueFromA = [...a].filter(char => !b.includes(char)).join('');
+    let uniqueFromB = [...b].filter(char => !a.includes(char)).join('');
+    return uniqueFromA + uniqueFromB;
+    // or
+    // return (a+b).split("").filter(c => !a.includes(c) || !b.includes(c)).join("");
+}
