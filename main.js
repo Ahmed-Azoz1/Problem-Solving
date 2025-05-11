@@ -4788,3 +4788,17 @@ function solve(a, b) {
     // or
     // return (a+b).split("").filter(c => !a.includes(c) || !b.includes(c)).join("");
 }
+
+// 400-Cats in hats
+function height(n) {
+    let totalHeight = 2000000;
+    let currentHeight = 2000000;
+    for (let i = 0; i < n; i++) {
+        currentHeight /= 2.5;
+        totalHeight += currentHeight;
+    }
+    return totalHeight.toFixed(3);
+    // or
+    // return (2000000 * (1 - Math.pow(0.4, n + 1)) / (1 - 0.4)).toFixed(3);
+}
+
