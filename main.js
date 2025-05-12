@@ -4816,3 +4816,15 @@ function scrabbleScore(str){
     // or
     // return str.toUpperCase().split('').reduce(function(score,v){ return score + ($dict[v]||0)},0);
 }
+
+// 402-Chain me
+function chain(input, fs) {
+    return fs.reduce((acc, fn) => fn(acc), input);
+    // or
+    // let result = 0;
+    // result = fs[0](input);
+    // for (let i = 1; i < fs.length; i++) {
+    //     result = fs[i](result);
+    // }
+    // return result;
+}
