@@ -4802,3 +4802,17 @@ function height(n) {
     // return (2000000 * (1 - Math.pow(0.4, n + 1)) / (1 - 0.4)).toFixed(3);
 }
 
+// 401-Scrabble Score
+function scrabbleScore(str){
+    const scoreMap = {
+        a: 1, b: 3, c: 3, d: 2, e: 1,
+        f: 4, g: 2, h: 4, i: 1, j: 8,
+        k: 5, l: 1, m: 3, n: 1, o: 1,
+        p: 3, q: 10, r: 1, s: 1, t: 1,
+        u: 1, v: 4, w: 4, x: 8, y: 4,
+        z: 10
+    };
+    return str.toLowerCase().split('').reduce((sum, char) => sum + (scoreMap[char] || 0), 0);
+    // or
+    // return str.toUpperCase().split('').reduce(function(score,v){ return score + ($dict[v]||0)},0);
+}
